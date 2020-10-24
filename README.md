@@ -1,4 +1,4 @@
-##你好我是唐尼瑞姆
+## 你好我是唐尼瑞姆
 
 你可以在一下站点来看我写的垃圾小说：  
 [MEGA](https://mega.nz/#F!bJRx1KLT!_XN_92cmsPGypMMrcWYz1A) | 
@@ -16,7 +16,7 @@
 [Twitter](https://twitter.com/TNT_wwxs)
 
 ——————  
-###附：
+### 附：
 [TG使用指南](https://telegra.ph/TNTwwxs-01-08-06)  
 [Furry频道推荐](https://telegra.ph/TNTwwxs-02-08-06)  
 [中文Furry群组](https://telegra.ph/TNTwwxs-08-08-06)  
