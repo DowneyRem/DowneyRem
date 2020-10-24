@@ -4,9 +4,7 @@
 
 你可以在一下站点来看我写的垃圾小说:  
 [MEGA](https://mega.nz/#F!bJRx1KLT!_XN_92cmsPGypMMrcWYz1A) | 
-[Pixiv](https://www.pixiv.net/member.php?id=16721009)
-
-
+[Pixiv](https://www.pixiv.net/member.php?id=16721009) | 
 [Telegram Channel](https://t.me/s/TNTwwxs)
 
 其他相对少用的平台
