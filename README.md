@@ -5,8 +5,7 @@
 [Pixiv](https://www.pixiv.net/member.php?id=16721009) | 
 [Telegram Channel](https://t.me/s/TNTwwxs)  
 
-联系本龙：  
-[Telegram](https://t.me/TNT_wwxs)
+联系本龙：[Telegram](https://t.me/TNT_wwxs)
 
 ### 衷心感谢
 [JadyXuan](https://github.com/JadyXuan) & 
