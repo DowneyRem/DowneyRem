@@ -17,7 +17,7 @@
 其他本龙用的平台：
 [Twitter](https://twitter.com/TNT_wwxs)
 
-——————
+——————  
 ###附：
 [TG使用指南](https://telegra.ph/TNTwwxs-01-08-06)  
 [Furry频道推荐](https://telegra.ph/TNTwwxs-02-08-06)  
