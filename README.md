@@ -1,4 +1,4 @@
-## 你好我是唐尼瑞姆
+## 你好，我是唐尼瑞姆
 
 你可以在一下站点来看我写的垃圾小说：  
 [MEGA](https://mega.nz/#F!bJRx1KLT!_XN_92cmsPGypMMrcWYz1A) | 
