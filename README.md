@@ -12,7 +12,7 @@
 [Google Docs](https://docs.google.com/document/d/1AfxgeUNo_B8ZujuMcrDUePDomQDXRpdQxFWPWD8E1Og)
 
 联系本龙：  
-[Telegram](https://t.me/TNT_wwxs)|
+[Telegram](https://t.me/TNT_wwxs) |
 [Twitter](https://twitter.com/TNT_wwxs)
 
 
