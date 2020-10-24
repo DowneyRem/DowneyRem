@@ -16,9 +16,9 @@
 [Twitter](https://twitter.com/TNT_wwxs)
 
 ——————  
-###衷心感谢
-[JadyXuan](https://github.com/JadyXuan)
-[UtopicPanther](https://github.com/UtopicPanther) & 
+### 衷心感谢
+[JadyXuan](https://github.com/JadyXuan) & 
+[UtopicPanther](https://github.com/UtopicPanther)
 提供的技术支持
 
 ### 附：[TG使用指南](https://telegra.ph/TNTwwxs-01-08-06)   
