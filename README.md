@@ -3,12 +3,10 @@
 你可以在一下站点来看我写的垃圾小说：  
 [MEGA](https://mega.nz/#F!bJRx1KLT!_XN_92cmsPGypMMrcWYz1A) | 
 [Pixiv](https://www.pixiv.net/member.php?id=16721009) | 
-[Telegram Channel](https://t.me/s/TNTwwxs)
+[Telegram Channel](https://t.me/s/TNTwwxs)  
+
 联系本龙：  
 [Telegram](https://t.me/TNT_wwxs)
-
-其他本龙用的平台：
-[Twitter](https://twitter.com/TNT_wwxs)
 
 ### 衷心感谢
 [JadyXuan](https://github.com/JadyXuan) & 
