@@ -17,7 +17,8 @@
 
 ——————  
 ### 附：
-[TG使用指南](https://telegra.ph/TNTwwxs-01-08-06)  
+[TG使用指南](https://telegra.ph/TNTwwxs-01-08-06)   
+
 [Furry频道推荐](https://telegra.ph/TNTwwxs-02-08-06)  
 [中文Furry群组](https://telegra.ph/TNTwwxs-08-08-06)  
 []()
