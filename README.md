@@ -10,8 +10,6 @@
 [JadyXuan](https://github.com/JadyXuan) & 
 [UtopicPanther](https://github.com/UtopicPanther) 
 提供的技术支持
-
-附：
-[TG使用指南](https://telegra.ph/TNTwwxs-01-08-06) | 
+附：[TG使用指南](https://telegra.ph/TNTwwxs-01-08-06) | 
 [Furry频道推荐](https://telegra.ph/TNTwwxs-02-08-06) | 
 [中文Furry群组](https://telegra.ph/TNTwwxs-08-08-06)  
