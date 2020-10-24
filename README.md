@@ -1,5 +1,4 @@
-## [你好，我是唐尼瑞姆](https://www.pixiv.net/novel/show.php?id=11775832)
-
+## [你好，我是唐尼瑞姆](https://www.pixiv.net/novel/show.php?id=1177583)  
 你可以在以下站点来看我写的垃圾（兽人）小说：  
 [Pixiv](https://www.pixiv.net/member.php?id=16721009) | 
 [MEGA](https://mega.nz/#F!bJRx1KLT!_XN_92cmsPGypMMrcWYz1A) | 
@@ -16,5 +15,5 @@
 [Furry频道推荐](https://telegra.ph/TNTwwxs-02-08-06) | 
 [中文Furry群组](https://telegra.ph/TNTwwxs-08-08-06) 
 
-Markdown好像不支持新标签打页面打开，换成HTML好像也不行
+Markdown好像不支持新标签打页面打开，换成HTML好像也不行  
 算了诸位还请手动用新标签页面打开吧 
