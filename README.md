@@ -12,8 +12,6 @@
 [JadyXuan](https://github.com/JadyXuan) & 
 [UtopicPanther](https://github.com/UtopicPanther) 
 提供的技术支持  
-
-
 [ＴＧ相关](https://telegra.ph/TNTwwxs-00-08-06)：
 [TG使用指南](https://telegra.ph/TNTwwxs-01-08-06) | 
 [Furry频道推荐](https://telegra.ph/TNTwwxs-02-08-06) | 
