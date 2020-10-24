@@ -1,8 +1,8 @@
 ## 你好，我是唐尼瑞姆
 
 你可以在以下站点来看我写的垃圾小说：  
-[MEGA](https://mega.nz/#F!bJRx1KLT!_XN_92cmsPGypMMrcWYz1A) | 
 [Pixiv](https://www.pixiv.net/member.php?id=16721009) | 
+[MEGA](https://mega.nz/#F!bJRx1KLT!_XN_92cmsPGypMMrcWYz1A) | 
 [Telegram Channel](https://t.me/s/TNTwwxs)  
 
 联系本龙：[Telegram](https://t.me/TNT_wwxs)
