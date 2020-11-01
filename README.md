@@ -1,4 +1,4 @@
-## [你好，我是唐尼瑞姆](https://www.pixiv.net/novel/show.php?id=11775832) | (建议新标签页打开)
+## [你好，我是唐尼瑞姆](https://www.pixiv.net/novel/show.php?id=11775832)
 你可以在以下站点来看我写的垃圾（兽人）小说：  
 [Pixiv](https://www.pixiv.net/member.php?id=16721009) | 
 [MEGA](https://mega.nz/#F!bJRx1KLT!_XN_92cmsPGypMMrcWYz1A) | 
