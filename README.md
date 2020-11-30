@@ -15,9 +15,9 @@
 [Furry频道推荐](https://telegra.ph/TNTwwxs-02-08-06) | 
 [中文Furry群组](https://telegra.ph/TNTwwxs-08-08-06)   
 
-TG频道:  
+TG频道:
 [@TNTwwxs](https://t.me/s/TNTwwx) |
 [DragonPhotos](https://t.me/s/DragonPhotos) |
-[DragonPhotosNSFW](https://t.me/s/DragonPhotos) |
+[DragonPhotosNSFW](https://t.me/s/DragonPhotos)  |
 [DragonRubber](https://t.me/s/DragonRubber) |
 [DragonLatex](https://t.me/s/DragonLatex) |
