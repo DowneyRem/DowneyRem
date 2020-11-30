@@ -3,7 +3,10 @@
 [Pixiv](https://www.pixiv.net/member.php?id=16721009) | 
 [MEGA](https://mega.nz/#F!bJRx1KLT!_XN_92cmsPGypMMrcWYz1A) | 
 [Telegram Channel](https://t.me/s/TNTwwxs)  
-联系本龙：[Telegram](https://t.me/TNT_wwxs) | [Twitter](https://twitter.com/TNTwwxs)
+联系本龙：[Telegram](https://t.me/TNT_wwxs) |
+[Twitter](https://twitter.com/TNTwwxs) |
+[付费支持](https://kdocs.cn/l/slkWbodUc)
+
 
 ### 感谢与其他：
 衷心感谢：
@@ -15,9 +18,3 @@
 [Furry频道推荐](https://telegra.ph/TNTwwxs-02-08-06) | 
 [中文Furry群组](https://telegra.ph/TNTwwxs-08-08-06)   
 
-TG频道:
-[@TNTwwxs](https://t.me/s/TNTwwx) |
-[DragonPhotos](https://t.me/s/DragonPhotos) |
-[DragonPhotosNSFW](https://t.me/s/DragonPhotos)  |
-[DragonRubber](https://t.me/s/DragonRubber) |
-[DragonLatex](https://t.me/s/DragonLatex) |
