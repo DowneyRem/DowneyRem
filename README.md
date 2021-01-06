@@ -1,5 +1,5 @@
 ## [你好，我是唐尼瑞姆](https://www.pixiv.net/novel/show.php?id=11775832)
-你可以在以下站点来看我写的垃圾兽人小说：  [![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=DowneyRem&show_icons=true&count_private=true&hide=issues,contribs&theme=merko)](https://github.com/anuraghazra/github-readme-stats)   
+你可以在以下站点来看我写的垃圾兽人小说：  
 更新位置：
 [Pixiv](https://www.pixiv.net/member.php?id=16721009) | 
 [MEGA](https://mega.nz/#F!bJRx1KLT!_XN_92cmsPGypMMrcWYz1A) | 
@@ -27,8 +27,8 @@ Q群(TF群/Furry群)
 
 
 <a href="https://github.com/anuraghazra/github-readme-stats">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats" />
+  <img align="left" src="https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats" />
 </a>
 <a href="https://github.com/anuraghazra/convoychat">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=convoychat" />
+  <img align="right" src="https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=convoychat" />
 </a>
