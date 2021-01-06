@@ -20,7 +20,7 @@ Q群(TF群/Furry群)
 [Furry频道推荐](https://telegra.ph/TNTwwxs-02-08-06) | 
 [中文Furry群组](https://telegra.ph/TNTwwxs-08-08-06)   
 
-[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=DowneyRem&show_icons=true&count_private=true&hide=stars,prs,contribs&theme=merko)](https://github.com/anuraghazra/github-readme-stats)   
+[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=DowneyRem&show_icons=true&count_private=true&hide=stars,prs,issues,contribs&theme=merko)](https://github.com/anuraghazra/github-readme-stats)   
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DowneyRem&layout=compact&theme=merko)](https://github.com/anuraghazra/github-readme-stats)
 
