@@ -3,7 +3,9 @@
 
 [![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=DowneyRem&show_icons=true&count_private=true&hide=issues&theme=merko)](https://github.com/anuraghazra/github-readme-stats)   
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DowneyRem&layout=compact&theme=merko)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DowneyRem&layout=compact&theme=merko)](https://github.com/anuraghazra/github-readme-stats)  
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DowneyRem&&theme=merko)](https://github.com/anuraghazra/github-readme-stats)  
 
 
 <a href="https://github.com/anuraghazra/github-readme-stats">
