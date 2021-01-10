@@ -2,7 +2,7 @@
 
 
 ### 安装 [BeanCount]() 与 [Fava]()
-Beancount 是复式记账的核心 命令行
+Beancount 是复式记账的核心 命令行  
 Fava 则是Beancount 的图形界面
 ```
 pip install BeanCount fava
