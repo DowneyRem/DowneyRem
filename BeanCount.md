@@ -40,12 +40,10 @@ include "2020.bean"
 
 ### 参考  
 #### BY byvoid [博文](https://byvoid.com/zhs/) [OpenCC项目](https://github.com/BYVoid/OpenCC)作者   
-1. [Beancount复式记账（2）：为什么](https://byvoid.com/zhs/blog/beancount-bookkeeping-1/)  
-2. [Beancount复式记账（3）：为什么](https://byvoid.com/zhs/blog/beancount-bookkeeping-2/)  
-3. [Beancount复式记账（3）：为什么](https://byvoid.com/zhs/blog/beancount-bookkeeping-3/)  
-4. [Beancount复式记账（4）：为什么](https://byvoid.com/zhs/blog/beancount-bookkeeping-4/)  
-
-[Beancount复式记账（4）：为什么](https://byvoid.com/zhs/blog/beancount-bookkeeping-4/)  
+1. [Beancount复式记账（1）：为什么](https://byvoid.com/zhs/blog/beancount-bookkeeping-1/)  
+2. [Beancount复式记账（2）：借贷记账法](https://byvoid.com/zhs/blog/beancount-bookkeeping-2/)  
+3. [Beancount复式记账（3）：结余与资产](https://byvoid.com/zhs/blog/beancount-bookkeeping-3/)  
+4. [Beancount复式记账（4）：项目管理](https://byvoid.com/zhs/blog/beancount-bookkeeping-4/)  
 
 #### By Lyric  
 0. [复式记账基础与 BEANCOUNT](https://gitpress.io/c/beancount-tutorial/beancount-tutorial-0)  
@@ -55,11 +53,11 @@ include "2020.bean"
 4. [BEANCOUNT 速查表](https://gitpress.io/c/beancount-tutorial/beancount-cheat-sheet)
 
 #### 单篇
-
-[Beancount —— 命令行复式簿记](https://wzyboy.im/post/1063.html) by wzyboy  
-[使用 BEANCOUNT 自动记账](https://lyric.im/beancount) by  lyric 安利自上文
-
-
-
-
+* [Beancount —— 命令行复式簿记](https://wzyboy.im/post/1063.html) by wzyboy  
+* [使用 BEANCOUNT 自动记账](https://lyric.im/beancount) by  lyric 安利自上文
+* [从单式记账到复式记账](https://sspai.com/post/36607)
+[博文](https://www.sundialdreams.com/from-single-entry-to-double-entry-accounting/) By yhlfh（少数派） 
+* [Beancount复式记账：接地气的Why and How](https://blog.zsxsoft.com/post/41)
+* [LEDGER LIKE - BEANCOUNT 复式记账](https://erasin.wang/beancount/)
+* [使用 Costflow 提高 Beancount 记账效率](https://medium.com/leplay/%E4%BD%BF%E7%94%A8-costflow-%E6%8F%90%E9%AB%98-beancount-%E8%AE%B0%E8%B4%A6%E6%95%88%E7%8E%87-bdae22d1f6c4) By leplay  
 
