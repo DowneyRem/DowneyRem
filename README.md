@@ -22,7 +22,7 @@ Q群(TF群/Furry群)
 其他内容：
 [MarkDown](https://github.com/DowneyRem/DowneyRem/blob/main/MarkDown.md) | 
 [FGI贡献](https://github.Icom/DowneyRem/DowneyRem/blob/main/FGI.md) | 
-[BeanCount 复式记账](https://github.com/DowneyRem/DowneyRem/blob/main/GitHub.md) |   
+[BeanCount 复式记账](https://github.com/DowneyRem/DowneyRem/blob/main/GitHub.md)    
 　　　　　
 [Github相关](https://github.com/DowneyRem/DowneyRem/blob/main/GitHub.md) | 
 []() | 
