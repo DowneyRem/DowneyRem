@@ -21,7 +21,7 @@ Q群(TF群/Furry群)
 [中文Furry群组](https://telegra.ph/TNTwwxs-08-08-06)   
 其他内容：
 [MarkDown](https://github.com/DowneyRem/DowneyRem/blob/main/MarkDown.md) | 
-[FGI相关链接](https://github.com/DowneyRem/DowneyRem/blob/main/FGI.md) | 
+[FGI贡献](https://github.Icom/DowneyRem/DowneyRem/blob/main/FGI.md) | 
 [BeanCount 复式记账](https://github.com/DowneyRem/DowneyRem/blob/main/GitHub.md) |   
 　　　　　
 [Github相关](https://github.com/DowneyRem/DowneyRem/blob/main/GitHub.md) | 
