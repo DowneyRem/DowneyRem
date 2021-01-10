@@ -36,7 +36,19 @@ include "2020.bean"
 ```
 
 #### 编写 2020.bean 具体的账本
-
+每次流水必然涉及到2个或2个以上的账户，且账户累计金额为0
+```
+2020-11-18 * "补助"
+    Assets:Bank:ABC:Card0916         +5000 CNY
+    Income:Subsidy                    -5000 CNY     
+```
+每次都要输入两次5000 ？好麻烦……  
+像下面这样就可以自动计算需要填写的金额
+```
+2020-11-18 * "转账"
+    Assets:WebPay:AliPay              5000 CNY
+    Assets:Bank:ABC:Card0916
+```
 
 #### 编辑器不够友好？使用 Fava 编辑
 新建TXT，复制一下代码，重命名为`账本.bat` 或 `账本.cmd` 
