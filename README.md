@@ -19,4 +19,11 @@ Q群(TF群/Furry群)
 [TG使用指南](https://telegra.ph/TNTwwxs-01-08-06) | 
 [Furry频道推荐](https://telegra.ph/TNTwwxs-02-08-06) | 
 [中文Furry群组](https://telegra.ph/TNTwwxs-08-08-06)   
-
+其他内容：
+[MarkDown](https://github.com/DowneyRem/DowneyRem/blob/main/MarkDown.md) | 
+[FGI相关链接](https://github.com/DowneyRem/DowneyRem/blob/main/FGI.md) | 
+[BeanCount 复式记账](https://github.com/DowneyRem/DowneyRem/blob/main/GitHub.md) |   
+　　　　　
+[Github相关](https://github.com/DowneyRem/DowneyRem/blob/main/GitHub.md) | 
+[]() | 
+[]() | 
