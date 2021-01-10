@@ -30,12 +30,25 @@ include "2020.bean"
 ```
 ; 资产 Assets —— 现金、银行存款、有价证券等；
 ; 负债 Liabilities —— 信用卡、房贷、车贷等；
-; 收入 Income —— 工资、奖金等；
-; 费用 Expenses —— 外出就餐、购物、旅行等；
-; 权益 Equity —— 用于「存放」某个时间段开始前已有的豆子，下文详述。
+; 收入 Income —— 工资、奖金等；（负数）
+; 费用 Expenses —— 外出就餐、购物、旅行等；（正数）
+; 权益 Equity —— 用于「存放」某个时间段开始前已有的资产
 ```
 
 #### 编写 2020.bean 具体的账本
+
+
+#### 编辑器不够友好？使用 Fava 编辑
+新建TXT，复制一下代码，重命名为`账本.bat` 或 `账本.cmd` 
+每次打开这个就可以直接再图形界面里编辑了
+```
+@echo off
+chcp 65001 >nul
+rem 切换成UTF8
+start chrome http://localhost:5000/
+rem 打开Chrome
+fava main.bean
+```
 
 
 ### 参考  
