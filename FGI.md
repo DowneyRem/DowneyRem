@@ -6,11 +6,14 @@ https://t.me/FurryGamesIndex
 Telegram 群组：
 https://t.me/joinchat/FlGsJhqcgXTHXQyQYAvaEg
 
+
 标签系统：
 https://furrygames.top/zh-cn/search_help.html  
 全部标签：
 https://github.com/FurryGamesIndex/games/blob/master/doc/tags.zh-cn.md  
 
+待加游戏：
+https://t.me/joinchat/WSfpgYUx5uUr2ZB6  
 贡献指南：
 https://github.com/FurryGamesIndex/games/blob/master/doc/Contribute.zh-cn.md  
 测试页面：
