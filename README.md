@@ -1,5 +1,7 @@
 ## [你好，我是唐尼瑞姆](https://www.pixiv.net/novel/show.php?id=11775832) 
-你可以在以下站点来看我写的垃圾兽人小说：  
+你可以在以下站点来看我写的垃圾
+[兽人](https://zh.wikipedia.org/zh/%E7%8D%B8%E8%BF%B7) / 
+[兽化](https://zh.wikifur.com/w/index.php?title=%E5%85%BD%E5%8C%96&variant=zh) 小说：  
 更新位置：
 [Pixiv](https://www.pixiv.net/member.php?id=16721009) | 
 [MEGA](https://mega.nz/#F!bJRx1KLT!_XN_92cmsPGypMMrcWYz1A) | 
