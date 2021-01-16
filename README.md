@@ -17,7 +17,7 @@ Q群(TF群/Furry群)
 [UtopicPanther](https://github.com/UtopicPanther) 
 提供的技术支持  
 [ＴＧ指南](https://telegra.ph/TNTwwxs-01-08-06)： 
-[小动物特供版](https://telegra.ph/TNTwwxs-0-08-06) | 
+[小动物特供版](https://telegra.ph/TNTwwxs-09-08-06) | 
 [Furry频道推荐](https://telegra.ph/TNTwwxs-02-08-06) | 
 [中文Furry群组](https://telegra.ph/TNTwwxs-08-08-06)   
 其他内容：
