@@ -6,7 +6,7 @@
 [Pixiv](https://www.pixiv.net/member.php?id=16721009) | 
 [MEGA](https://mega.nz/#F!bJRx1KLT!_XN_92cmsPGypMMrcWYz1A) | 
 [Telegram频道](https://t.me/s/TNTwwxs) |
-Q群(TF群/Furry群)  
+Q群(TF群/Furry/龙群)  
 联系本龙：
 [Telegram](https://t.me/TNT_wwxs) |
 [Twitter](https://twitter.com/TNTwwxs) |
