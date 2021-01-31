@@ -3,6 +3,9 @@ https://docs.github.com/cn/
 # 博客模板
 https://github.com/liyucang-git/liyucang-git.github.io
 
+# Git 教程
+https://liyucang-git.github.io/2019/11/15/git%E6%96%87%E4%BB%B6%E5%A4%B9%E6%8E%A2%E7%B4%A2/
+
 #### 暂存的其他东西  
 [![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=DowneyRem&show_icons=true&count_private=true&hide=issues,contribs&theme=merko)](https://github.com/anuraghazra/github-readme-stats)   
 
