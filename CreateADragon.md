@@ -1,6 +1,8 @@
 # 龙的图设创建指南
 #### 建议根据提示内容寻找参考图再思考
 ##### 版本ver 1.0
+Github 链接：
+https://github.com/DowneyRem/DowneyRem/blob/main/CreateADragon.md
 
 
 ## 大方向
