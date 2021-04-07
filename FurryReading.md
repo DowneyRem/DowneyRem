@@ -28,7 +28,7 @@
 1. 
 
 ### [标签系统](https://docs.google.com/spreadsheets/d/1Dtm1pCWmTO_KmJExdXoedxYVoxbnoHtEAnxSykGlVPo)：
-
+https://ehtt.now.sh/list/all?pageIndex=0
 
 
 ### 投稿bot：
