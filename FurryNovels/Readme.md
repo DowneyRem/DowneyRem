@@ -1,12 +1,9 @@
 ## 兽人小说 频道企划
 
 ### 频道类型：公开频道  
-### 频道名称：
+### 频道名称与链接：
 - 兽人小说/獸人小説，方便搜索
-
-### 频道链接：（与名称想对应）  
-- @FurryNovels 
-- ~~@shourenxiaoshuo~~ 不推荐汉语拼音
+- [@FurryNovels]()
 
 ### 频道定位：  
 1. 目标群体：使用Telegram的华裔Furry(看得懂中文) 
@@ -21,11 +18,10 @@
 1. 简繁问题：决定于作者提供的版本；文件名-繁/简
 1. 订阅来源：各活跃TG兽人群组
 1. 更新频率：待定（每周1次起步）
-1. 
-1. 
 
-### [标签系统](https://docs.google.com/spreadsheets/d/1Dtm1pCWmTO_KmJExdXoedxYVoxbnoHtEAnxSykGlVPo)：
-https://ehtt.now.sh/list/all?pageIndex=0
+### 标签系统
+[简体](https://github.com/DowneyRem/DowneyRem/blob/main/FurryNovels/Tags_zh_cn.md) & 
+[繁體](https://github.com/DowneyRem/DowneyRem/blob/main/FurryNovels/Tags_zh_tw.md) & 
+[谷歌表格旧版](https://docs.google.com/spreadsheets/d/1Dtm1pCWmTO_KmJExdXoedxYVoxbnoHtEAnxSykGlVPo)  
 
-
-### 投稿bot：
+### 投稿bot：待定
