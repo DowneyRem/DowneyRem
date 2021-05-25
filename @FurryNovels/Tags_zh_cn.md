@@ -191,18 +191,15 @@
 ` #AnalBirth ` 肛门出产  
 
 ### 第五行：网址
-可以阅读该小说网址
+可以阅读该小说网址  
 https://www.pixiv.net/novel/show.php?id=12172396
 
 ### 举例：
 [这不仅仅是一个龙奴的故事.txt](https://t.me/FurryNovels/46)  
-`
-BY #Zoroaio #幽幽子`  
-``
-`#TXT #Finshed #zh_hans`  
-`#R18 #R18G #General #Gay #Lesbian`  
-`#anthro #dragon`   
-`#Uncest #BDSM #Slave #Tragedy`  
-`https://www.pixiv.net/novel/show.php?id=12172396`  
-`
+` BY #Zoroaio #幽幽子`  
+` #TXT #Finshed #zh_hans `  
+` #R18 #R18G #General #Gay #Lesbian `   
+` #anthro #dragon `   
+` #Uncest #BDSM #Slave #Tragedy `  
+` https://www.pixiv.net/novel/show.php?id=12172396 `  
 
