@@ -6,9 +6,19 @@
 標籤過多時，可選取主要標籤  
 單個單詞標籤通常首字母大寫 `#Apple`  
 多個單詞標籤如 `#AppleBanana` 每個單詞首字母大寫  
-  
+
+### 舉例：  
+[這不僅僅是一個龍奴的故事.txt](https://t.me/FurryNovels/46)  
+` BY #Zoroaio #幽幽子`  
+` #TXT #Finshed #zh_hans `  
+` #R18 #R18G #General #Gay #Lesbian `  
+` #anthro #dragon `  
+` #Uncest #BDSM #Slave #Tragedy `  
+` https://www.pixiv.net/novel/show.php?id=12172396 `    
+
 ### 第〇行：作者名字  
-  
+` BY #Zoroaio #幽幽子`  
+
 ### 第一行：雜類  
 ` #TXT #finished #zh_cn`  
   
@@ -194,12 +204,3 @@
 可以閱讀該小說網址  
 https://www.pixiv.net/novel/show.php?id=12172396  
   
-### 舉例：  
-[這不僅僅是一個龍奴的故事.txt](https://t.me/FurryNovels/46)  
-` BY #Zoroaio #幽幽子`  
-` #TXT #Finshed #zh_hans `  
-` #R18 #R18G #General #Gay #Lesbian `  
-` #anthro #dragon `  
-` #Uncest #BDSM #Slave #Tragedy `  
-` https://www.pixiv.net/novel/show.php?id=12172396 `    
-
