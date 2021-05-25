@@ -46,32 +46,32 @@
 
 ### 第三行：种族标签
 #### 1. 一般标签
-出现了某一种族，就添加某一种族的标签
-本列标签与 [Ehentai 标签](https://ehtt.vercel.app/list/all) 几乎完全一致
-` #bear ` 熊
-` #bull ` 牛 **（不区分性别）**
-` #cat ` 猫
-` #dragon ` 西方龙
-` #long ` 东方龙
-` #dog ` 狗
-` #dolphin ` 海豚
-` #elephant ` 大象
-` #fish ` 鱼
-` #hourse ` 马
-` #kangaroo ` 袋鼠
-` #lion ` 狮子
-` #monkey ` 猴子
-` #mouse ` 鼠
-` #panther ` 豹
-` #Pig ` 猪
-` #Rabbit ` 兔
-` #Rhinoceros ` 犀牛
-` #Shark ` 鲨鱼
-` #Sheep ` 羊
-` #Snake ` 蛇
-` #Tiger ` 老虎
-` #Turtle ` 龟
-` #Wolf ` 狼
+出现了某一种族，就添加某一种族的标签  
+本列标签与 [Ehentai 标签](https://ehtt.vercel.app/list/all) 几乎完全一致  
+` #bear ` 熊  
+` #bull ` 牛 **（不区分性别）**  
+` #cat ` 猫  
+` #dragon ` 西方龙  
+` #long ` 东方龙  
+` #dog ` 狗  
+` #dolphin ` 海豚  
+` #elephant ` 大象  
+` #fish ` 鱼  
+` #hourse ` 马  
+` #kangaroo ` 袋鼠  
+` #lion ` 狮子  
+` #monkey ` 猴子  
+` #mouse ` 鼠  
+` #panther ` 豹  
+` #Pig ` 猪  
+` #Rabbit ` 兔  
+` #Rhinoceros ` 犀牛  
+` #Shark ` 鲨鱼  
+` #Sheep ` 羊  
+` #Snake ` 蛇  
+` #Tiger ` 老虎  
+` #Turtle ` 龟  
+` #Wolf ` 狼  
 
 #### 2. 特殊种族
 ` #Human ` 人类  
@@ -198,11 +198,11 @@ https://www.pixiv.net/novel/show.php?id=12172396
 [这不仅仅是一个龙奴的故事.txt](https://t.me/FurryNovels/46)  
 `
 BY #Zoroaio #幽幽子`  
-
-`#TXT #Finshed #zh_hans  
-#R18 #R18G #General #Gay #Lesbian  
-#anthro #dragon   
-#Uncest #BDSM #Slave #Tragedy  
-https://www.pixiv.net/novel/show.php?id=12172396  
+``
+`#TXT #Finshed #zh_hans`  
+`#R18 #R18G #General #Gay #Lesbian`  
+`#anthro #dragon`   
+`#Uncest #BDSM #Slave #Tragedy`  
+`https://www.pixiv.net/novel/show.php?id=12172396`  
 `
 
