@@ -3,7 +3,7 @@
 ### 频道类型：公开频道  
 ### 频道名称与链接：
 - 兽人小说/獸人小説，方便搜索
-- [@FurryNovels]()
+- [@FurryNovels](https://t.me/FurryNovels)
 
 ### 频道定位：  
 1. 目标群体：使用Telegram的华裔Furry(看得懂中文) 
