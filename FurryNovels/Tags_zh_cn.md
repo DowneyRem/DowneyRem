@@ -7,7 +7,17 @@
 单个单词标签通常首字母大写 `#Apple`  
 多个单词标签如 `#AppleBanana` 每个单词首字母大写  
 
+### 举例：
+[这不仅仅是一个龙奴的故事.txt](https://t.me/FurryNovels/46)  
+` BY #Zoroaio #幽幽子`  
+` #TXT #Finshed #zh_hans `  
+` #R18 #R18G #General #Gay #Lesbian `   
+` #anthro #dragon `   
+` #Uncest #BDSM #Slave #Tragedy `  
+` https://www.pixiv.net/novel/show.php?id=12172396 `  
+
 ### 第〇行：作者名字
+` BY #Zoroaio #幽幽子 `
 
 ### 第一行：杂类
 ` #TXT #finished #zh_cn`
@@ -193,13 +203,3 @@
 ### 第五行：网址
 可以阅读该小说网址  
 https://www.pixiv.net/novel/show.php?id=12172396
-
-### 举例：
-[这不仅仅是一个龙奴的故事.txt](https://t.me/FurryNovels/46)  
-` BY #Zoroaio #幽幽子`  
-` #TXT #Finshed #zh_hans `  
-` #R18 #R18G #General #Gay #Lesbian `   
-` #anthro #dragon `   
-` #Uncest #BDSM #Slave #Tragedy `  
-` https://www.pixiv.net/novel/show.php?id=12172396 `  
-
