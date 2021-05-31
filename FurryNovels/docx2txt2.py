@@ -13,7 +13,7 @@ def timethis(func):
         start = time.perf_counter()
         r = func(*args, **kwargs)
         end = time.perf_counter()
-        print('{}.{} : {}'.format(func.__module__, func.__name__, end - start))
+        print("{}.{} : {}".format(func.__module__, func.__name__, end - start))
         return r
     return wrapper
     
@@ -48,34 +48,47 @@ def opendocx(list):
             text = ""; j = 1
             for para in docx.paragraphs:
                 j += 1;
-                if j <= 8 or (("第"in para.text or "序"in para.text or "终"in para.text)and "章"in para.text):
+                if para.style.name == "Tittle":       #标题
                     text += para.text + "\n"
-                else:
+                    
+                elif para.style.name == "Heading 1":  #一级标题
+                    text += para.text + "\n"
+                    
+                elif para.style.name == "Heading 2":  #二级标题
+                    text += para.text + "\n"
+                    
+                elif para.style.name == "Heading 3":  #三级标题
+                    text += para.text + "\n"
+                    
+                elif para.style.name == "Normal":        #正文
+                    text += para.text + "\n"
+                    
+                elif para.style.name == "Normal Indent": #正文缩进
                     text += "　　"+ para.text + "\n"
-            
-            path = path.replace(".docx", ".txt")
+                    
             savetext(path, text)
             print("【" + name + "】转换成功，当前进度："+ str(round(100*(i+1)/len(list),2))+"%")
             
         except:
             print("【" + name + "】打开失败或文件有问题")
             
+        
 @timethis
 def main():
     print("转换开始：")
     print("下列文件已完成转换：")
     print("————————————————")
-
+    
     path = os.path.join(os.getcwd())
     findfile(path)
     opendocx(list)
-        
+    
     print("————————————————")
     print("所有文件均完成转换")
     os.system("pause")
     
     
-if __name__ == '__main__':
+if __name__ == "__main__":
     list = []; text = ""; main()
 
 
