@@ -2,7 +2,6 @@
 # -*- coding: UTF-8 -*-
 import os
 import time
-from docx import Document
 from functools import wraps
 
 
@@ -30,7 +29,7 @@ def findfile(path):
     
     
 def removefile(path):
-    (filepath, name) = os.path.split(path) #分离文件名和目录名
+    (filepath, name) = os.path.split(path)  # 分离文件名和目录名
     (name, ext) = os.path.splitext(name)
     if os.path.exists(path):
         try:
@@ -40,21 +39,25 @@ def removefile(path):
             print("【" + name + "】删除失败")
         
         
-@timethis
 def main():
     print("删除TXT开始：")
     print("下列文件已被删除：")
     print("————————————————")
-
-    path = os.path.join(os.getcwd())
-    findfile(path)
+    
+    findfile(path1)
+    findfile(path2)
     for i in range(0 ,len(list)):
         path = list[i]
         removefile(path)
         
     print("————————————————")
-    #os.system("pause")
+    # os.system("pause")
     
     
 if __name__ == '__main__':
-    list = []; text = ""; main()
+    path = os.path.join(os.getcwd())
+    path = path.replace("\小说推荐", "")
+    path1 = os.path.join(path + "\兽人小说\小说转换版")
+    path2 = os.path.join(path + "\兽人小说\小说推荐")
+    
+    list = [] ; text = ""; main()
