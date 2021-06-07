@@ -30,6 +30,10 @@ def findfile(path):
     
     
 def savetext(path, text):
+    (dir, name) = os.path.split(path) #分离文件名和目录名
+    if not os.path.exists(dir):
+        os.makedirs(dir)
+        
     with open(path, "w", encoding = "UTF8") as f:
         f.write(text)
         f.close()
@@ -40,6 +44,7 @@ def opendocx(list):
         path = list[i]
         textpath = path.replace("\写作", "\写作\兽人小说")
         textpath = textpath.replace(".docx", ".txt")
+        
         if os.path.exists(textpath):
             i += 1
             
@@ -93,8 +98,3 @@ def main():
 if __name__ == "__main__":
     list = []; text = ""; main()
 
-
-
-    
-    
-    
