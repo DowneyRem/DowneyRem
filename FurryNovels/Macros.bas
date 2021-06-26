@@ -1,3 +1,4 @@
+Attribute VB_Name = "Macros"
 Sub 小说排版()
 Dim filename As String
 
@@ -46,11 +47,11 @@ Dim filename As String
     Selection.Find.Execute Replace:=wdReplaceAll
     
     
-    '4个半角空格替换为空
+    '2个半角空格替换为空
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
-        .Text = "    "
+        .Text = "  "
         .Replacement.Text = ""
         .Forward = True
         .Wrap = wdFindContinue
@@ -193,7 +194,7 @@ Dim filename As String
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
-        .Text = "(^13[序,引,零,〇,一,二,三,四,五,六,七,八,九,十]^13)"
+        .Text = "^13([序,引,零,〇,一,二,三,四,五,六,七,八,九,十])^13"
         .Replacement.Text = "第\1章"
         .Forward = True
         .Wrap = wdFindContinue
@@ -207,7 +208,7 @@ Dim filename As String
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
-        .Text = "(^13十[一,二,三,四,五,六,七,八,九]^13)"
+        .Text = "^13(十[一,二,三,四,五,六,七,八,九])^13"
         .Replacement.Text = "第\1章"
         .Forward = True
         .Wrap = wdFindContinue
@@ -221,7 +222,7 @@ Dim filename As String
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
-        .Text = "(^13[一,二,三,四,五,六,七,八,九]十[一,二,三,四,五,六,七,八,九]^13)"
+        .Text = "^13([一,二,三,四,五,六,七,八,九]十[一,二,三,四,五,六,七,八,九])^13"
         .Replacement.Text = "第\1章"
         .Forward = True
         .Wrap = wdFindContinue
@@ -416,7 +417,7 @@ Dim filename As String
     Selection.Find.Replacement.ClearFormatting
     Selection.Find.Replacement.Style = ActiveDocument.Styles("标题 2")
     With Selection.Find
-        .Text = "(第?[章,部分]*^13)"
+        .Text = "(第?[章,部]*^13)"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -430,7 +431,7 @@ Dim filename As String
     Selection.Find.Replacement.ClearFormatting
     Selection.Find.Replacement.Style = ActiveDocument.Styles("标题 2")
     With Selection.Find
-        .Text = "(第??[章,部分]*^13)"
+        .Text = "(第??[章,部]*^13)"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
