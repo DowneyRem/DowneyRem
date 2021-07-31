@@ -137,7 +137,7 @@
 ` #Bdsm ` 调教  
 ` #Bondage ` 束缚  
 ` #ElectricShocks ` 电击  
-` #BodyModification `身体改造
+` #BodyModification `身体改造  
 ` #MindControl ` 精神控制  
 ` #Asphyxiation ` 窒息  
 ` #Cbt ` 虐屌  
@@ -183,8 +183,8 @@
 ` #Military ` 军装  
 ` #Leotard ` 紧身衣  
 ` #StraitJacket ` 拘束衣  
-` #SwimSuit ` 泳装
-` #Fundoshi ` 六尺褌
+` #SwimSuit ` 泳装  
+` #Fundoshi ` 六尺褌  
 ` #socks ` 袜子  
 
 #### 身体描述
