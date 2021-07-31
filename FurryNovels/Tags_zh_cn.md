@@ -121,6 +121,7 @@
 ` #CockSlapping ` 阴茎打脸  
 ` #Frottage ` 阴茎摩擦  
 ` #UrethraInsertion ` 尿道插入  
+` #RapedWhileDying `奸杀
 
 ####  性关系
 ` #Rape ` 强奸  
@@ -136,6 +137,7 @@
 ` #Bdsm ` 调教  
 ` #Bondage ` 束缚  
 ` #ElectricShocks ` 电击  
+` #BodyModification `身体改造
 ` #MindControl ` 精神控制  
 ` #Asphyxiation ` 窒息  
 ` #Cbt ` 虐屌  
@@ -145,6 +147,7 @@
 ` #Leash ` 狗链  
 ` #Piercing ` 穿孔  
 ` #Tattoo ` 纹身  
+` #CrotchTattoo ` 淫纹  
 ` #BodyWriting ` 写侮辱性词汇  
 ` #PublicUse ` 肉便器  
 ` #PissDrinking ` 饮尿  
@@ -187,7 +190,9 @@
 #### 身体描述
 ` #Muscles ` 肌肉丰满  
 ` #BigPenis ` 大根  
+` #Hyper ` 巨根  
 ` #Phimosis ` 包茎  
+` #CrotchTattoo ` 淫纹  
 
 #### 吞食
 ` #Vore ` 吞食  
