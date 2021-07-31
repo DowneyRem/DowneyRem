@@ -14,7 +14,7 @@ Dim filename As String
     '基本文本插入
     '在第一行后插入下面的内容
     Selection.HomeKey Unit:=wdStory
-    Selection.MoveDown Unit:=wdLine, Count:=2, Extend:=wdMove
+    Selection.MoveDown Unit:=wdLine, Count:=1, Extend:=wdMove
     Selection.TypeText Text:="作者："
     Selection.TypeParagraph
     Selection.TypeText Text:="网址："
@@ -33,11 +33,71 @@ Dim filename As String
     Selection.Style = ActiveDocument.Styles("正文缩进")
     
     
+    '英文符号替换
+    '逗号
+    'Selection.Find.ClearFormatting
+    'Selection.Find.Replacement.ClearFormatting
+    'Selection.Find.Replacement.Style = ActiveDocument.Styles("正文缩进")
+    'With Selection.Find
+    '    .Text = ","
+    '    .Replacement.Text = "，"
+    '    .Forward = True
+    '    .Wrap = wdFindContinue
+    '    .Format = True
+    '    .MatchWildcards = True
+    'End With
+    'Selection.Find.Execute Replace:=wdReplaceAll
+    
+    
+    '引号替换1
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    Selection.Find.Replacement.Style = ActiveDocument.Styles("正文缩进")
+    With Selection.Find
+        .Text = "^13"""
+        .Replacement.Text = "^13“"
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = True
+        .MatchWildcards = True
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+    
+    
+    '引号替换1
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    Selection.Find.Replacement.Style = ActiveDocument.Styles("正文缩进")
+    With Selection.Find
+        .Text = "([，,。,？,！])"""
+        .Replacement.Text = "\1”"
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = True
+        .MatchWildcards = True
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+    
+    
     '全角空格替换为空
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
         .Text = "　"
+        .Replacement.Text = ""
+        .Forward = True
+        .Wrap = wdFindContinue
+        .MatchByte = True
+        .MatchWildcards = True
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+    
+    
+    '制表符转替换为空
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    With Selection.Find
+        .Text = "^t"
         .Replacement.Text = ""
         .Forward = True
         .Wrap = wdFindContinue
@@ -61,12 +121,12 @@ Dim filename As String
     Selection.Find.Execute Replace:=wdReplaceAll
     
     
-    '制表符转半角空格
+    '段尾半角空格替换为空
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
-        .Text = "^t"
-        .Replacement.Text = " "
+        .Text = " ^13"
+        .Replacement.Text = "^13"
         .Forward = True
         .Wrap = wdFindContinue
         .MatchByte = True
@@ -75,12 +135,42 @@ Dim filename As String
     Selection.Find.Execute Replace:=wdReplaceAll
     
     
+    '手动换行符转换行符
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    With Selection.Find
+        .Text = "^l"
+        .Replacement.Text = "^13"
+        .Forward = True
+        .Wrap = wdFindContinue
+        .MatchByte = True
+        .MatchWildcards = True
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+    
+    
+    
+    '去除过多空行
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    With Selection.Find
+        .Text = "^p^p"
+        .Replacement.Text = "^p"
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = False
+        .MatchWildcards = False
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+    
+    
+    
     '——————分割线转空行
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
         .Text = "—{3,20}"
-        .Replacement.Text = "^13"
+        .Replacement.Text = "^13^13"
         .Forward = True
         .Wrap = wdFindContinue
         .Format = True
@@ -94,29 +184,15 @@ Dim filename As String
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
         .Text = "-{2,20}"
-        .Replacement.Text = "^13"
+        .Replacement.Text = "^13^13"
         .Forward = True
         .Wrap = wdFindContinue
         .Format = True
         .MatchWildcards = True
     End With
     Selection.Find.Execute Replace:=wdReplaceAll
-    
-      
-      
-    'Pixiv标记处理
-    '[newpage]转空行
-    Selection.Find.ClearFormatting
-    Selection.Find.Replacement.ClearFormatting
-    With Selection.Find
-        .Text = "\[newpage\]"
-        .Replacement.Text = "^13^13^13"
-        .Forward = True
-        .Wrap = wdFindContinue
-        .Format = True
-    End With
-    Selection.Find.Execute Replace:=wdReplaceAll
-    
+        
+        
     
     '[pixivimage:作品ID]转文字链接
     Selection.Find.ClearFormatting
@@ -372,7 +448,7 @@ Dim filename As String
     Selection.Find.Replacement.ClearFormatting
     Selection.Find.Replacement.Style = ActiveDocument.Styles("标题 1")
     With Selection.Find
-        .Text = "(第[0-9]@卷*^13)"
+        .Text = "(第[0-9]@卷*)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -387,7 +463,7 @@ Dim filename As String
     Selection.Find.Replacement.ClearFormatting
     Selection.Find.Replacement.Style = ActiveDocument.Styles("标题 2")
     With Selection.Find
-        .Text = "(第[0-9]@章*^13)"
+        .Text = "(第[0-9]@章*)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -402,7 +478,7 @@ Dim filename As String
     Selection.Find.Replacement.ClearFormatting
     Selection.Find.Replacement.Style = ActiveDocument.Styles("标题 2")
     With Selection.Find
-        .Text = "(第[0-9]@.[0-9]章*^13)"
+        .Text = "(第[0-9]@.[0-9]章*)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -417,7 +493,7 @@ Dim filename As String
     Selection.Find.Replacement.ClearFormatting
     Selection.Find.Replacement.Style = ActiveDocument.Styles("标题 2")
     With Selection.Find
-        .Text = "(第?[章,部]*^13)"
+        .Text = "(第?[章,部]*)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -431,7 +507,7 @@ Dim filename As String
     Selection.Find.Replacement.ClearFormatting
     Selection.Find.Replacement.Style = ActiveDocument.Styles("标题 2")
     With Selection.Find
-        .Text = "(第??[章,部]*^13)"
+        .Text = "(第??[章,部]*)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -445,7 +521,7 @@ Dim filename As String
     Selection.Find.Replacement.ClearFormatting
     Selection.Find.Replacement.Style = ActiveDocument.Styles("标题 2")
     With Selection.Find
-        .Text = "(第???章*^13)"
+        .Text = "(第???章*)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -459,7 +535,7 @@ Dim filename As String
     Selection.Find.Replacement.ClearFormatting
     Selection.Find.Replacement.Style = ActiveDocument.Styles("标题 2")
     With Selection.Find
-        .Text = "(第????章*^13)"
+        .Text = "(第????章*)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -475,7 +551,7 @@ Dim filename As String
     Selection.Find.Replacement.ClearFormatting
     Selection.Find.Replacement.Style = ActiveDocument.Styles("标题 2")
     With Selection.Find
-        .Text = "(前言*^13)"
+        .Text = "(前言*)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -489,7 +565,7 @@ Dim filename As String
     Selection.Find.Replacement.ClearFormatting
     Selection.Find.Replacement.Style = ActiveDocument.Styles("标题 2")
     With Selection.Find
-        .Text = "(序^13)"
+        .Text = "(序)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -503,7 +579,7 @@ Dim filename As String
     Selection.Find.Replacement.ClearFormatting
     Selection.Find.Replacement.Style = ActiveDocument.Styles("标题 2")
     With Selection.Find
-        .Text = "(序章*^13)"
+        .Text = "(序章*)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -517,7 +593,7 @@ Dim filename As String
     Selection.Find.Replacement.ClearFormatting
     Selection.Find.Replacement.Style = ActiveDocument.Styles("标题 2")
     With Selection.Find
-        .Text = "(引^13)"
+        .Text = "(引)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -531,7 +607,7 @@ Dim filename As String
     Selection.Find.Replacement.ClearFormatting
     Selection.Find.Replacement.Style = ActiveDocument.Styles("标题 2")
     With Selection.Find
-        .Text = "(番外*^13)"
+        .Text = "(番外*)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -545,7 +621,7 @@ Dim filename As String
     Selection.Find.Replacement.ClearFormatting
     Selection.Find.Replacement.Style = ActiveDocument.Styles("标题 2")
     With Selection.Find
-        .Text = "(彩蛋*^13)"
+        .Text = "(彩蛋*)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -559,7 +635,7 @@ Dim filename As String
     Selection.Find.Replacement.ClearFormatting
     Selection.Find.Replacement.Style = ActiveDocument.Styles("标题 2")
     With Selection.Find
-        .Text = "(后记*^13)"
+        .Text = "(后记*)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -573,7 +649,7 @@ Dim filename As String
     Selection.Find.Replacement.ClearFormatting
     Selection.Find.Replacement.Style = ActiveDocument.Styles("标题 2")
     With Selection.Find
-        .Text = "(跋^13)"
+        .Text = "(跋)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -587,7 +663,7 @@ Dim filename As String
     Selection.Find.Replacement.ClearFormatting
     Selection.Find.Replacement.Style = ActiveDocument.Styles("标题 2")
     With Selection.Find
-        .Text = "(作者的话*^13)"
+        .Text = "(作者的话*)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -602,9 +678,9 @@ Dim filename As String
     '去除多余的空行
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
-    Selection.Find.Replacement.Style = ActiveDocument.Styles("正文缩进")
+    'Selection.Find.Replacement.Style = ActiveDocument.Styles("正文缩进")
     With Selection.Find
-        .Text = "^13{4,20}"
+        .Text = "^13{3,20}"
         .Replacement.Text = "^13^13^13"
         .Forward = True
         .Wrap = wdFindContinue
