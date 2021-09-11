@@ -1,46 +1,41 @@
 Attribute VB_Name = "Macros"
-Sub Ğ¡ËµÅÅ°æ()
+Sub å°è¯´æ’ç‰ˆ()
 Dim filename As String
 
 '
-' Ğ¡ËµÅÅ°æ ºê
+' å°è¯´æ’ç‰ˆ å®
 '
 
-    'µÚÒ»ĞĞºóÌí¼ÓÒ»¸ö¿ÕĞĞ
-    'ActiveDocument.Paragraphs.Add _
-    'Range:=ActiveDocument.Paragraphs(2).Range
-    
-    
-    '»ù±¾ÎÄ±¾²åÈë
-    'ÔÚµÚÒ»ĞĞºó²åÈëÏÂÃæµÄÄÚÈİ
+    'åŸºæœ¬æ–‡æœ¬æ’å…¥
+    'åœ¨ç¬¬ä¸€è¡Œåæ’å…¥ä¸‹é¢çš„å†…å®¹
     Selection.HomeKey Unit:=wdStory
     Selection.MoveDown Unit:=wdLine, Count:=1, Extend:=wdMove
-    Selection.TypeText Text:="×÷Õß£º"
+    Selection.TypeText Text:="ä½œè€…ï¼š"
     Selection.TypeParagraph
-    Selection.TypeText Text:="ÍøÖ·£º"
+    Selection.TypeText Text:="ç½‘å€ï¼š"
     Selection.TypeParagraph
-    Selection.TypeText Text:="±êÇ©£º"
+    Selection.TypeText Text:="æ ‡ç­¾ï¼š"
     Selection.TypeParagraph
-    'Selection.TypeText Text:="ÆäËû£º"
-    'Selection.TypeParagraph
+    Selection.TypeText Text:=""
+    Selection.TypeParagraph
+    Selection.TypeText Text:=""
     Selection.TypeParagraph
     
     
-    
-    '»ù±¾¸ñÊ½ÉèÖÃ1
-    'È«ÎÄÉèÖÃ³ÉÕıÎÄËõ½øµÄ¸ñÊ½
+    'åŸºæœ¬æ ¼å¼è®¾ç½®1
+    'å…¨æ–‡è®¾ç½®æˆæ­£æ–‡ç¼©è¿›çš„æ ¼å¼
     Selection.WholeStory
-    Selection.Style = ActiveDocument.Styles("ÕıÎÄËõ½ø")
+    Selection.Style = ActiveDocument.Styles("æ­£æ–‡ç¼©è¿›")
     
     
-    'Ó¢ÎÄ·ûºÅÌæ»»
-    '¶ººÅ
+    'è‹±æ–‡ç¬¦å·æ›¿æ¢
+    'é€—å·
     'Selection.Find.ClearFormatting
     'Selection.Find.Replacement.ClearFormatting
-    'Selection.Find.Replacement.Style = ActiveDocument.Styles("ÕıÎÄËõ½ø")
+    'Selection.Find.Replacement.Style = ActiveDocument.Styles("æ­£æ–‡ç¼©è¿›")
     'With Selection.Find
     '    .Text = ","
-    '    .Replacement.Text = "£¬"
+    '    .Replacement.Text = "ï¼Œ"
     '    .Forward = True
     '    .Wrap = wdFindContinue
     '    .Format = True
@@ -49,13 +44,13 @@ Dim filename As String
     'Selection.Find.Execute Replace:=wdReplaceAll
     
     
-    'ÒıºÅÌæ»»1
+    'å¼•å·æ›¿æ¢1
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
-    Selection.Find.Replacement.Style = ActiveDocument.Styles("ÕıÎÄËõ½ø")
+    Selection.Find.Replacement.Style = ActiveDocument.Styles("æ­£æ–‡ç¼©è¿›")
     With Selection.Find
         .Text = "^13"""
-        .Replacement.Text = "^13¡°"
+        .Replacement.Text = "^13â€œ"
         .Forward = True
         .Wrap = wdFindContinue
         .Format = True
@@ -64,13 +59,13 @@ Dim filename As String
     Selection.Find.Execute Replace:=wdReplaceAll
     
     
-    'ÒıºÅÌæ»»1
+    'å¼•å·æ›¿æ¢2
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
-    Selection.Find.Replacement.Style = ActiveDocument.Styles("ÕıÎÄËõ½ø")
+    Selection.Find.Replacement.Style = ActiveDocument.Styles("æ­£æ–‡ç¼©è¿›")
     With Selection.Find
-        .Text = "([£¬,¡£,£¿,£¡])"""
-        .Replacement.Text = "\1¡±"
+        .Text = "([ï¼Œ,ã€‚,ï¼Ÿ,ï¼])"""
+        .Replacement.Text = "\1â€"
         .Forward = True
         .Wrap = wdFindContinue
         .Format = True
@@ -79,11 +74,41 @@ Dim filename As String
     Selection.Find.Execute Replace:=wdReplaceAll
     
     
-    'È«½Ç¿Õ¸ñÌæ»»Îª¿Õ
+    'çœç•¥å·æ›¿æ¢
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    Selection.Find.Replacement.Style = ActiveDocument.Styles("æ­£æ–‡ç¼©è¿›")
+    With Selection.Find
+        .Text = ".{3,}"
+        .Replacement.Text = "â€¦â€¦"
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = True
+        .MatchWildcards = True
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+    
+    
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    Selection.Find.Replacement.Style = ActiveDocument.Styles("æ­£æ–‡ç¼©è¿›")
+    With Selection.Find
+        .Text = "ã€‚{3,}"
+        .Replacement.Text = "â€¦â€¦"
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = True
+        .MatchWildcards = True
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+    
+    
+    
+    'å…¨è§’ç©ºæ ¼æ›¿æ¢ä¸ºç©º
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
-        .Text = "¡¡"
+        .Text = "ã€€"
         .Replacement.Text = ""
         .Forward = True
         .Wrap = wdFindContinue
@@ -93,7 +118,7 @@ Dim filename As String
     Selection.Find.Execute Replace:=wdReplaceAll
     
     
-    'ÖÆ±í·û×ªÌæ»»Îª¿Õ
+    'åˆ¶è¡¨ç¬¦è½¬æ›¿æ¢ä¸ºç©º
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
@@ -107,7 +132,7 @@ Dim filename As String
     Selection.Find.Execute Replace:=wdReplaceAll
     
     
-    '2¸ö°ë½Ç¿Õ¸ñÌæ»»Îª¿Õ
+    '2ä¸ªåŠè§’ç©ºæ ¼æ›¿æ¢ä¸ºç©º
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
@@ -121,7 +146,7 @@ Dim filename As String
     Selection.Find.Execute Replace:=wdReplaceAll
     
     
-    '¶ÎÎ²°ë½Ç¿Õ¸ñÌæ»»Îª¿Õ
+    'æ®µå°¾åŠè§’ç©ºæ ¼æ›¿æ¢ä¸ºç©º
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
@@ -135,7 +160,7 @@ Dim filename As String
     Selection.Find.Execute Replace:=wdReplaceAll
     
     
-    'ÊÖ¶¯»»ĞĞ·û×ª»»ĞĞ·û
+    'æ‰‹åŠ¨æ¢è¡Œç¬¦è½¬æ¢è¡Œç¬¦
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
@@ -150,7 +175,7 @@ Dim filename As String
     
     
     
-    'È¥³ı¹ı¶à¿ÕĞĞ
+    'å»é™¤è¿‡å¤šç©ºè¡Œ
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
@@ -165,11 +190,11 @@ Dim filename As String
     
     
     
-    '¡ª¡ª¡ª¡ª¡ª¡ª·Ö¸îÏß×ª¿ÕĞĞ
+    'â€”â€”â€”â€”â€”â€”åˆ†å‰²çº¿è½¬ç©ºè¡Œ
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
-        .Text = "¡ª{3,20}"
+        .Text = "â€”{3,20}"
         .Replacement.Text = "^13^13"
         .Forward = True
         .Wrap = wdFindContinue
@@ -179,7 +204,7 @@ Dim filename As String
     Selection.Find.Execute Replace:=wdReplaceAll
     
     
-    '------------·Ö¸îÏß×ª¿ÕĞĞ
+    '------------åˆ†å‰²çº¿è½¬ç©ºè¡Œ
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
@@ -191,130 +216,16 @@ Dim filename As String
         .MatchWildcards = True
     End With
     Selection.Find.Execute Replace:=wdReplaceAll
-        
-        
     
-    '[pixivimage:×÷Æ·ID]×ªÎÄ×ÖÁ´½Ó
+    
+    
+    'ç»Ÿä¸€æ’å…¥ç©ºè¡Œ
+    'åœ¨äºŒçº§æ ‡é¢˜ï¼ˆç¬¬Xç« ï¼‰å‰æ’å…¥ä¸¤ä¸ªç©ºè¡Œ
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
-        .Text = "\[pixivimage:(*)\]"
-        .Replacement.Text = "^13Í¼Æ¬Á´½Ó£ºwww.pixiv.net/artworks/\1^13"
-        .Forward = True
-        .Wrap = wdFindContinue
-        .Format = True
-        .MatchWildcards = True
-     End With
-     Selection.Find.Execute Replace:=wdReplaceAll
-    
-    
-    '[[jumpuri:±êÌâ > Á´½ÓÄ¿±êµÄURL]] ×ªÎÄ×ÖÁ´½Ó
-    Selection.Find.ClearFormatting
-    Selection.Find.Replacement.ClearFormatting
-    With Selection.Find
-        .Text = "\[\[jumpuri:(*) \> (*)\]\]"
-        .Replacement.Text = "^13¡¾\1¡¿Á´½Ó£º\2^13"
-        .Forward = True
-        .Wrap = wdFindContinue
-        .Format = True
-        .MatchWildcards = True
-    End With
-    Selection.Find.Execute Replace:=wdReplaceAll
-        
-        
-    '[jump:Á´½ÓÄ¿±êµÄÒ³Ãæ±àºÅ]Ìæ»»Îª¿Õ
-    Selection.Find.ClearFormatting
-    Selection.Find.Replacement.ClearFormatting
-    With Selection.Find
-        .Text = "\[jump:(*)\]"
-        .Replacement.Text = ""
-        .Forward = True
-        .Wrap = wdFindContinue
-        .Format = True
-        .MatchWildcards = True
-    End With
-    Selection.Find.Execute Replace:=wdReplaceAll
-    
-    
-    ' [chapter:Îå]×ªÕÂ½Ú±êÌâ
-    Selection.Find.ClearFormatting
-    Selection.Find.Replacement.ClearFormatting
-    With Selection.Find
-        .Text = "\[chapter:([Ğò,Òı,Áã,©–,Ò»,¶ş,Èı,ËÄ,Îå,Áù,Æß,°Ë,¾Å,Ê®,ÖÕ])\]"
-        .Replacement.Text = "µÚ\1ÕÂ"
-        .Forward = True
-        .Wrap = wdFindContinue
-        .Format = True
-        .MatchWildcards = True
-    End With
-    Selection.Find.Execute Replace:=wdReplaceAll
-    
-    
-    ' [chapter:µÚÎåÕÂ][chapter:µÚ5ÕÂ 1213]×ªÕÂ½Ú±êÌâ
-    Selection.Find.ClearFormatting
-    Selection.Find.Replacement.ClearFormatting
-    With Selection.Find
-        .Text = "\[chapter:(µÚ*ÕÂ*)\]"
-        .Replacement.Text = "\1"
-        .Forward = True
-        .Wrap = wdFindContinue
-        .Format = True
-        .MatchWildcards = True
-    End With
-    Selection.Find.Execute Replace:=wdReplaceAll
-    
-    
-        
-    'µ¥ĞĞÖĞÎÄÊı×Ö´¦Àí
-    'Ê®ÒÔÄÚÊı×Ö£¬×ªÕÂ½Ú±êÌâ
-    Selection.Find.ClearFormatting
-    Selection.Find.Replacement.ClearFormatting
-    With Selection.Find
-        .Text = "^13([Ğò,Òı,Áã,©–,Ò»,¶ş,Èı,ËÄ,Îå,Áù,Æß,°Ë,¾Å,Ê®])^13"
-        .Replacement.Text = "µÚ\1ÕÂ"
-        .Forward = True
-        .Wrap = wdFindContinue
-        .Format = True
-        .MatchWildcards = True
-    End With
-    Selection.Find.Execute Replace:=wdReplaceAll
-    
-    
-    '¶şÊ®ÒÔÄÚÊı×Ö£¬×ªÕÂ½Ú±êÌâ
-    Selection.Find.ClearFormatting
-    Selection.Find.Replacement.ClearFormatting
-    With Selection.Find
-        .Text = "^13(Ê®[Ò»,¶ş,Èı,ËÄ,Îå,Áù,Æß,°Ë,¾Å])^13"
-        .Replacement.Text = "µÚ\1ÕÂ"
-        .Forward = True
-        .Wrap = wdFindContinue
-        .Format = True
-        .MatchWildcards = True
-    End With
-    Selection.Find.Execute Replace:=wdReplaceAll
-    
-    
-    'Ò»°ÙÒÔÄÚÊı×Ö£¬×ªÕÂ½Ú±êÌâ
-    Selection.Find.ClearFormatting
-    Selection.Find.Replacement.ClearFormatting
-    With Selection.Find
-        .Text = "^13([Ò»,¶ş,Èı,ËÄ,Îå,Áù,Æß,°Ë,¾Å]Ê®[Ò»,¶ş,Èı,ËÄ,Îå,Áù,Æß,°Ë,¾Å])^13"
-        .Replacement.Text = "µÚ\1ÕÂ"
-        .Forward = True
-        .Wrap = wdFindContinue
-        .Format = True
-        .MatchWildcards = True
-    End With
-    Selection.Find.Execute Replace:=wdReplaceAll
-    
-    
-    'Í³Ò»²åÈë¿ÕĞĞ
-    'ÔÚ¶ş¼¶±êÌâ£¨µÚXÕÂ£©Ç°²åÈëÁ½¸ö¿ÕĞĞ
-    Selection.Find.ClearFormatting
-    Selection.Find.Replacement.ClearFormatting
-    With Selection.Find
-        .Text = "(µÚ?ÕÂ*)"
-        .Replacement.Text = "^13^13\1"
+        .Text = "(ç¬¬?ç« *)"
+        .Replacement.Text = "^13^13\1^13"
         .Forward = True
         .Wrap = wdFindContinue
         .Format = True
@@ -326,8 +237,8 @@ Dim filename As String
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
-        .Text = "(µÚ??ÕÂ*)"
-        .Replacement.Text = "^13^13\1"
+        .Text = "(ç¬¬??ç« *)"
+        .Replacement.Text = "^13^13\1^13"
         .Forward = True
         .Wrap = wdFindContinue
         .Format = True
@@ -339,8 +250,8 @@ Dim filename As String
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
-        .Text = "(µÚ??ÕÂ*)"
-        .Replacement.Text = "^13^13\1"
+        .Text = "(ç¬¬??ç« *)"
+        .Replacement.Text = "^13^13\1^13"
         .Forward = True
         .Wrap = wdFindContinue
         .Format = True
@@ -352,8 +263,8 @@ Dim filename As String
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
-        .Text = "(µÚ???ÕÂ*)"
-        .Replacement.Text = "^13^13\1"
+        .Text = "(ç¬¬???ç« *)"
+        .Replacement.Text = "^13^13\1^13"
         .Forward = True
         .Wrap = wdFindContinue
         .Format = True
@@ -362,12 +273,12 @@ Dim filename As String
     Selection.Find.Execute Replace:=wdReplaceAll
     
     
-    'ºº×Ö¡¾µÚÒ»Ç§ÕÂ¡¿Ç°£¬²åÈë¿ÕĞĞ
+    'æ±‰å­—ã€ç¬¬ä¸€åƒç« ã€‘å‰ï¼Œæ’å…¥ç©ºè¡Œ
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
-        .Text = "(µÚ?????ÕÂ*)"
-        .Replacement.Text = "^13^13\1"
+        .Text = "(ç¬¬?????ç« *)"
+        .Replacement.Text = "^13^13\1^13"
         .Forward = True
         .Wrap = wdFindContinue
         .Format = True
@@ -376,11 +287,11 @@ Dim filename As String
     Selection.Find.Execute Replace:=wdReplaceAll
     
     
-    'Ç°ÑÔºó¼ÇµÈ²åÈë¿ÕĞĞ
+    'å‰è¨€åè®°ç­‰æ’å…¥ç©ºè¡Œ
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
-        .Text = "(Ç°ÑÔ*^13)"
+        .Text = "(å‰è¨€*^13)"
         .Replacement.Text = "^13^13\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -393,20 +304,7 @@ Dim filename As String
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
-        .Text = "(·¬Íâ*^13)"
-        .Replacement.Text = "^13^13\1"
-        .Forward = True
-        .Wrap = wdFindContinue
-        .Format = True
-        .MatchWildcards = True
-    End With
-    Selection.Find.Execute Replace:=wdReplaceAll
-        
-        
-    Selection.Find.ClearFormatting
-    Selection.Find.Replacement.ClearFormatting
-    With Selection.Find
-        .Text = "(²Êµ°*^13)"
+        .Text = "(ç•ªå¤–*^13)"
         .Replacement.Text = "^13^13\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -419,7 +317,7 @@ Dim filename As String
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
-        .Text = "(ºó¼Ç*^13)"
+        .Text = "(åè®°*^13)"
         .Replacement.Text = "^13^13\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -432,7 +330,7 @@ Dim filename As String
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
-        .Text = "(×÷ÕßµÄ»°*)^13"
+        .Text = "(ä½œè€…çš„è¯*)^13"
         .Replacement.Text = "^13^13\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -440,15 +338,74 @@ Dim filename As String
         .MatchWildcards = True
     End With
     Selection.Find.Execute Replace:=wdReplaceAll
-     
-     
-    'Í³Ò»ÉèÖÃ±êÌâ
-    'ÉèÖÃÒ»¼¶±êÌâ£ºµÚX¾í
+    
+    
+    
+    'ä¸­æ–‡æ•°å­—è½¬æ ‡é¢˜
+    'åä»¥å†…ä¸­æ–‡æ•°å­—
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
-    Selection.Find.Replacement.Style = ActiveDocument.Styles("±êÌâ 1")
     With Selection.Find
-        .Text = "(µÚ[0-9]@¾í*)^13"
+        .Text = "^13([é›¶,ã€‡,ä¸€,äºŒ,ä¸‰,å››,äº”,å…­,ä¸ƒ,å…«,ä¹,å]*)^13"
+        .Replacement.Text = "^13^13ç¬¬\1ç« ^13^13^13"
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = True
+        .MatchWildcards = True
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+    
+    
+    'äºŒåä»¥å†…ä¸­æ–‡æ•°å­—
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    With Selection.Find
+        .Text = "^13(å[ä¸€,äºŒ,ä¸‰,å››,äº”,å…­,ä¸ƒ,å…«,ä¹]å)^13"
+        .Replacement.Text = "^13^13ç¬¬\1ç« ^13^13^13"
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = True
+        .MatchWildcards = True
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+    
+    
+    'æ•´åä¸­æ–‡æ•°å­—
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    With Selection.Find
+        .Text = "^13([äºŒ,ä¸‰,å››,äº”,å…­,ä¸ƒ,å…«,ä¹]å)^13"
+        .Replacement.Text = "^13^13ç¬¬\1ç« ^13^13"
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = True
+        .MatchWildcards = True
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+    
+    
+    'ä¸€ç™¾ä»¥å†…ä¸­æ–‡æ•°å­—
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    With Selection.Find
+        .Text = "^13([äºŒ,ä¸‰,å››,äº”,å…­,ä¸ƒ,å…«,ä¹]å[ä¸€,äºŒ,ä¸‰,å››,äº”,å…­,ä¸ƒ,å…«,ä¹])^13"
+        .Replacement.Text = "^13^13ç¬¬\1ç« ^13^13"
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = True
+        .MatchWildcards = True
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+    
+    
+    
+    'ç»Ÿä¸€è®¾ç½®æ ‡é¢˜
+    'è®¾ç½®ä¸€çº§æ ‡é¢˜ï¼šç¬¬Xå·
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    Selection.Find.Replacement.Style = ActiveDocument.Styles("æ ‡é¢˜ 1")
+    With Selection.Find
+        .Text = "(ç¬¬[0-9]@å·*)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -458,12 +415,12 @@ Dim filename As String
     Selection.Find.Execute Replace:=wdReplaceAll
     
     
-    'ÉèÖÃ¶ş¼¶±êÌâ£ºµÚXÕÂ
+    'è®¾ç½®äºŒçº§æ ‡é¢˜ï¼šç¬¬Xç« 
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
-    Selection.Find.Replacement.Style = ActiveDocument.Styles("±êÌâ 2")
+    Selection.Find.Replacement.Style = ActiveDocument.Styles("æ ‡é¢˜ 2")
     With Selection.Find
-        .Text = "(µÚ[0-9]@ÕÂ*)^13"
+        .Text = "(ç¬¬[0-9]@ç« *)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -473,12 +430,12 @@ Dim filename As String
     Selection.Find.Execute Replace:=wdReplaceAll
     
     
-    'µÚ9.5ÕÂ£¬ÉèÖÃ±êÌâ
+    'ç¬¬9.5ç« ï¼Œè®¾ç½®æ ‡é¢˜
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
-    Selection.Find.Replacement.Style = ActiveDocument.Styles("±êÌâ 2")
+    Selection.Find.Replacement.Style = ActiveDocument.Styles("æ ‡é¢˜ 2")
     With Selection.Find
-        .Text = "(µÚ[0-9]@.[0-9]ÕÂ*)^13"
+        .Text = "(ç¬¬[0-9]@.[0-9]ç« *)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -488,12 +445,12 @@ Dim filename As String
     Selection.Find.Execute Replace:=wdReplaceAll
     
     
-    'ÖĞÎÄĞòºÅ£¬ÉèÖÃ±êÌâ
+    'ä¸­æ–‡åºå·ï¼Œè®¾ç½®æ ‡é¢˜
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
-    Selection.Find.Replacement.Style = ActiveDocument.Styles("±êÌâ 2")
+    Selection.Find.Replacement.Style = ActiveDocument.Styles("æ ‡é¢˜ 2")
     With Selection.Find
-        .Text = "(µÚ?[ÕÂ,²¿]*)^13"
+        .Text = "(ç¬¬?[ç« ,éƒ¨]*)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -505,9 +462,9 @@ Dim filename As String
     
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
-    Selection.Find.Replacement.Style = ActiveDocument.Styles("±êÌâ 2")
+    Selection.Find.Replacement.Style = ActiveDocument.Styles("æ ‡é¢˜ 2")
     With Selection.Find
-        .Text = "(µÚ??[ÕÂ,²¿]*)^13"
+        .Text = "(ç¬¬??[ç« ,éƒ¨]*)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -519,9 +476,9 @@ Dim filename As String
         
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
-    Selection.Find.Replacement.Style = ActiveDocument.Styles("±êÌâ 2")
+    Selection.Find.Replacement.Style = ActiveDocument.Styles("æ ‡é¢˜ 2")
     With Selection.Find
-        .Text = "(µÚ???ÕÂ*)^13"
+        .Text = "(ç¬¬???ç« *)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -533,9 +490,9 @@ Dim filename As String
     
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
-    Selection.Find.Replacement.Style = ActiveDocument.Styles("±êÌâ 2")
+    Selection.Find.Replacement.Style = ActiveDocument.Styles("æ ‡é¢˜ 2")
     With Selection.Find
-        .Text = "(µÚ????ÕÂ*)^13"
+        .Text = "(ç¬¬????ç« *)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -546,12 +503,12 @@ Dim filename As String
     
     
     
-    'Ç°ÑÔºó¼ÇµÈÉèÖÃ±êÌâ
+    'å‰è¨€åè®°ç­‰è®¾ç½®æ ‡é¢˜
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
-    Selection.Find.Replacement.Style = ActiveDocument.Styles("±êÌâ 2")
+    Selection.Find.Replacement.Style = ActiveDocument.Styles("æ ‡é¢˜ 2")
     With Selection.Find
-        .Text = "(Ç°ÑÔ*)^13"
+        .Text = "(å‰è¨€*)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -563,65 +520,9 @@ Dim filename As String
         
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
-    Selection.Find.Replacement.Style = ActiveDocument.Styles("±êÌâ 2")
+    Selection.Find.Replacement.Style = ActiveDocument.Styles("æ ‡é¢˜ 2")
     With Selection.Find
-        .Text = "(Ğò)^13"
-        .Replacement.Text = "\1"
-        .Forward = True
-        .Wrap = wdFindContinue
-        .Format = True
-        .MatchWildcards = True
-    End With
-    Selection.Find.Execute Replace:=wdReplaceAll
-    
-    
-    Selection.Find.ClearFormatting
-    Selection.Find.Replacement.ClearFormatting
-    Selection.Find.Replacement.Style = ActiveDocument.Styles("±êÌâ 2")
-    With Selection.Find
-        .Text = "(ĞòÕÂ*)^13"
-        .Replacement.Text = "\1"
-        .Forward = True
-        .Wrap = wdFindContinue
-        .Format = True
-        .MatchWildcards = True
-    End With
-    Selection.Find.Execute Replace:=wdReplaceAll
-        
-        
-    Selection.Find.ClearFormatting
-    Selection.Find.Replacement.ClearFormatting
-    Selection.Find.Replacement.Style = ActiveDocument.Styles("±êÌâ 2")
-    With Selection.Find
-        .Text = "(Òı)^13"
-        .Replacement.Text = "\1"
-        .Forward = True
-        .Wrap = wdFindContinue
-        .Format = True
-        .MatchWildcards = True
-    End With
-    Selection.Find.Execute Replace:=wdReplaceAll
-    
-    
-    Selection.Find.ClearFormatting
-    Selection.Find.Replacement.ClearFormatting
-    Selection.Find.Replacement.Style = ActiveDocument.Styles("±êÌâ 2")
-    With Selection.Find
-        .Text = "(·¬Íâ*)^13"
-        .Replacement.Text = "\1"
-        .Forward = True
-        .Wrap = wdFindContinue
-        .Format = True
-        .MatchWildcards = True
-    End With
-    Selection.Find.Execute Replace:=wdReplaceAll
-        
-        
-    Selection.Find.ClearFormatting
-    Selection.Find.Replacement.ClearFormatting
-    Selection.Find.Replacement.Style = ActiveDocument.Styles("±êÌâ 2")
-    With Selection.Find
-        .Text = "(²Êµ°*)^13"
+        .Text = "(åº)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -633,9 +534,9 @@ Dim filename As String
             
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
-    Selection.Find.Replacement.Style = ActiveDocument.Styles("±êÌâ 2")
+    Selection.Find.Replacement.Style = ActiveDocument.Styles("æ ‡é¢˜ 2")
     With Selection.Find
-        .Text = "(ºó¼Ç*)^13"
+        .Text = "(åè®°*)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -647,23 +548,9 @@ Dim filename As String
             
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
-    Selection.Find.Replacement.Style = ActiveDocument.Styles("±êÌâ 2")
+    Selection.Find.Replacement.Style = ActiveDocument.Styles("æ ‡é¢˜ 2")
     With Selection.Find
-        .Text = "(°Ï)^13"
-        .Replacement.Text = "\1"
-        .Forward = True
-        .Wrap = wdFindContinue
-        .Format = True
-        .MatchWildcards = True
-    End With
-    Selection.Find.Execute Replace:=wdReplaceAll
-    
-            
-    Selection.Find.ClearFormatting
-    Selection.Find.Replacement.ClearFormatting
-    Selection.Find.Replacement.Style = ActiveDocument.Styles("±êÌâ 2")
-    With Selection.Find
-        .Text = "(×÷ÕßµÄ»°*)^13"
+        .Text = "(ä½œè€…çš„è¯*)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -674,11 +561,11 @@ Dim filename As String
     
     
     
-    '»ù±¾¸ñÊ½ÉèÖÃ2
-    'È¥³ı¶àÓàµÄ¿ÕĞĞ
+    'åŸºæœ¬æ ¼å¼è®¾ç½®2
+    'å»é™¤å¤šä½™çš„ç©ºè¡Œ
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
-    'Selection.Find.Replacement.Style = ActiveDocument.Styles("ÕıÎÄËõ½ø")
+    Selection.Find.Replacement.Style = ActiveDocument.Styles("æ­£æ–‡ç¼©è¿›")
     With Selection.Find
         .Text = "^13{3,20}"
         .Replacement.Text = "^13^13^13"
@@ -690,19 +577,19 @@ Dim filename As String
     Selection.Find.Execute Replace:=wdReplaceAll
     
     
-    'Ç°5ĞĞÉèÖÃ³ÉÕıÎÄÑùÊ½
+    'å‰5è¡Œè®¾ç½®æˆæ­£æ–‡æ ·å¼
     Selection.HomeKey Unit:=wdStory
-    Selection.MoveDown Unit:=wdLine, Count:=5, Extend:=wdExtend
-    Selection.Style = ActiveDocument.Styles("ÕıÎÄ")
+    Selection.MoveDown Unit:=wdLine, Count:=4, Extend:=wdExtend
+    Selection.Style = ActiveDocument.Styles("æ­£æ–‡")
     
     
-    'µÚÒ»ĞĞÉèÖÃ³É±êÌâÑùÊ½
+    'ç¬¬ä¸€è¡Œè®¾ç½®æˆæ ‡é¢˜æ ·å¼
     Selection.HomeKey Unit:=wdStory
     Selection.MoveDown Unit:=wdLine, Count:=1, Extend:=wdExtend
-    Selection.Style = ActiveDocument.Styles("±êÌâ")
+    Selection.Style = ActiveDocument.Styles("æ ‡é¢˜")
     
     
-    '»ñÈ¡ÎÄ¼şÃû£¬±£´æÎÄ¼ş
+    'è·å–æ–‡ä»¶åï¼Œä¿å­˜æ–‡ä»¶
     filename = ActiveDocument.Paragraphs(1).Range.Text
     filename = Left(filename, Len(filename) - 1) & ".docx"
     ChangeFileOpenDirectory "D:\Users\Administrator\Desktop\"
