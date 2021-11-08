@@ -16,8 +16,9 @@
 ` #Uncest #BDSM #Slave #Tragedy `  
 ` https://www.pixiv.net/novel/show.php?id=12172396 `  
 
-### 第〇行：作者名字
-` BY #Zoroaio #幽幽子 `
+### 第〇行：作品名 & 作者名
+` 這不僅僅是一個龍奴的故事`  
+` BY #Zoroaio #幽幽子 `  
 
 ### 第一行：杂类
 ` #TXT #finished #zh_cn`
@@ -28,7 +29,7 @@
 - ` #mobi ` mobi 格式
 
 #### 2. 作品完成度
-- ` #Finished ` 作品完结
+- ` #Finished ` 作品完结，优先采用完结作品
 - ` #Updating ` 作品更新中
 - ` #Died  ` 作者停笔（作品未完结且不再更新）
 
@@ -46,13 +47,31 @@
 ` #SFW #R18 #R18G `
 - ` #SFW ` 未描述性行为的小说，或简单略过
 - ` #R18 ` 用大量笔墨明确描述性行为的小说
-- ` #R18G ` 含有使他人非意外断肢行为并以此为乐行为的小说
+- ` #R18G ` 含有**使他人非意外受伤/断肢等并以此为乐行为**的小说
 
 #### 2. 性行为对象标签
 ` #General #Gay #Lesbian `
-- ` #General ` 出现了男女性行为
-- ` #Gay ` 出现了男男性行为
-- ` #Lesbian ` 出现了女女性行为
+- ` #General ` 出现了男女爱恋或性行为
+- ` #Gay ` 出现了男男爱恋或性行为
+- ` #Lesbian ` 出现了女女爱恋或性行为
+
+调整后，上三者作为 `#SFW 或 #R18` 的下属标签：  
+`#SFW #General #Gay #Lesbian `   出现相关爱恋  
+`#R18 #General #Gay #Lesbian `   出现相关行为   
+
+#### 3. R18G 内容标签
+` #WeightGain ` 育肥/肥满化  
+` #BattleDamage ` 战损（战场上损伤）  
+
+` #CBT ` 虐屌 Cock and Ball Torture  
+` #GutTorture ` 虐腹（拳打脚踢腹部）  
+` #BodyModification `身体改造（不限于用机械替换身体部位）  
+- ` #BodyModification #Cyborg` 机械化改造后的生化人   
+- ` #BodyModification #machine` 机械化改造后的生化人  
+- 变形，变身 Transformation 不视为身体改造  
+- 兽化 Transfur 不视为身体改造  
+
+
 
 ### 第三行：种族标签
 #### 1. 一般标签
@@ -102,7 +121,7 @@
 
 ### 第四行：玩法等
 统一小类标签过多可以换行，分隔不同类别标签（通常没必要）  
-` #WeightGain ` 育肥/肥满化
+
 
 #### 性交方式
 ` #VaginalSex ` 阴道交  
