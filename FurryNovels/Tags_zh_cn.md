@@ -68,8 +68,8 @@
 ` #BodyModification `身体改造（不限于用机械替换身体部位）  
 - ` #BodyModification #Cyborg` 机械化改造后的生化人   
 - ` #BodyModification #machine` 机械化改造后的生化人  
-- 变形，变身 Transformation 不视为身体改造  
-- 兽化 Transfur 不视为身体改造  
+- 变形，变身 Transformation 不视为身体改造，不视为R18G  
+- 兽化 Transfur 不视为身体改造不视为R18G    
 
 
 
