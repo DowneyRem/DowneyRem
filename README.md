@@ -24,11 +24,17 @@ Q群(TF群/Furry/龙群)
 [小动物特供版](https://telegra.ph/TNTwwxs-09-08-06) | 
 [Furry频道推荐](https://telegra.ph/TNTwwxs-02-08-06) | 
 [中文Furry群组](https://telegra.ph/TNTwwxs-08-08-06)   
+　　　　　
+[兽人小说频道](https://t.me/FurryNovels) | 
+[Pixiv的阅读书源](https://github.com/DowneyRem/PixivSource) | 
+[龙设思考方向](https://github.com/DowneyRem/DowneyRem/blob/main/CreateADragon.md)
+
 其他内容：
 [MarkDown](https://github.com/DowneyRem/DowneyRem/blob/main/MarkDown.md) | 
+[Github相关](https://github.com/DowneyRem/DowneyRem/blob/main/GitHub.md) | 
 [FGI贡献](https://github.com/DowneyRem/DowneyRem/blob/main/FGI.md) | 
 [BeanCount 复式记账](https://github.com/DowneyRem/DowneyRem/blob/main/BeanCount.md)    
 　　　　　
-[Github相关](https://github.com/DowneyRem/DowneyRem/blob/main/GitHub.md) | 
-[龙设思考方向](https://github.com/DowneyRem/DowneyRem/blob/main/CreateADragon.md) | 
-[Pixiv 的书源](https://github.com/DowneyRem/PixivSource) | 
+
+
+
