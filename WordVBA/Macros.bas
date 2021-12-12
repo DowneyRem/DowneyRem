@@ -1,4 +1,3 @@
-Attribute VB_Name = "Macros"
 Sub 小说排版()
 Dim filename As String
 
@@ -6,6 +5,11 @@ Dim filename As String
 ' 小说排版 宏
 '
 
+    '第一行后添加一个空行
+    'ActiveDocument.Paragraphs.Add _
+    'Range:=ActiveDocument.Paragraphs(2).Range
+    
+    
     '基本文本插入
     '在第一行后插入下面的内容
     Selection.HomeKey Unit:=wdStory
@@ -16,6 +20,8 @@ Dim filename As String
     Selection.TypeParagraph
     Selection.TypeText Text:="标签："
     Selection.TypeParagraph
+    'Selection.TypeText Text:="其他："
+    'Selection.TypeParagraph
     Selection.TypeText Text:=""
     Selection.TypeParagraph
     Selection.TypeText Text:=""
@@ -219,134 +225,13 @@ Dim filename As String
     
     
     
-    '统一插入空行
-    '在二级标题（第X章）前插入两个空行
-    Selection.Find.ClearFormatting
-    Selection.Find.Replacement.ClearFormatting
-    With Selection.Find
-        .Text = "(第?章*)"
-        .Replacement.Text = "^13^13\1^13"
-        .Forward = True
-        .Wrap = wdFindContinue
-        .Format = True
-        .MatchWildcards = True
-    End With
-    Selection.Find.Execute Replace:=wdReplaceAll
-    
-    
-    Selection.Find.ClearFormatting
-    Selection.Find.Replacement.ClearFormatting
-    With Selection.Find
-        .Text = "(第??章*)"
-        .Replacement.Text = "^13^13\1^13"
-        .Forward = True
-        .Wrap = wdFindContinue
-        .Format = True
-        .MatchWildcards = True
-    End With
-    Selection.Find.Execute Replace:=wdReplaceAll
-    
-    
-    Selection.Find.ClearFormatting
-    Selection.Find.Replacement.ClearFormatting
-    With Selection.Find
-        .Text = "(第??章*)"
-        .Replacement.Text = "^13^13\1^13"
-        .Forward = True
-        .Wrap = wdFindContinue
-        .Format = True
-        .MatchWildcards = True
-    End With
-    Selection.Find.Execute Replace:=wdReplaceAll
-    
-    
-    Selection.Find.ClearFormatting
-    Selection.Find.Replacement.ClearFormatting
-    With Selection.Find
-        .Text = "(第???章*)"
-        .Replacement.Text = "^13^13\1^13"
-        .Forward = True
-        .Wrap = wdFindContinue
-        .Format = True
-        .MatchWildcards = True
-    End With
-    Selection.Find.Execute Replace:=wdReplaceAll
-    
-    
-    '汉字【第一千章】前，插入空行
-    Selection.Find.ClearFormatting
-    Selection.Find.Replacement.ClearFormatting
-    With Selection.Find
-        .Text = "(第?????章*)"
-        .Replacement.Text = "^13^13\1^13"
-        .Forward = True
-        .Wrap = wdFindContinue
-        .Format = True
-        .MatchWildcards = True
-    End With
-    Selection.Find.Execute Replace:=wdReplaceAll
-    
-    
-    '前言后记等插入空行
-    Selection.Find.ClearFormatting
-    Selection.Find.Replacement.ClearFormatting
-    With Selection.Find
-        .Text = "(前言*^13)"
-        .Replacement.Text = "^13^13\1"
-        .Forward = True
-        .Wrap = wdFindContinue
-        .Format = True
-        .MatchWildcards = True
-    End With
-    Selection.Find.Execute Replace:=wdReplaceAll
-            
-        
-    Selection.Find.ClearFormatting
-    Selection.Find.Replacement.ClearFormatting
-    With Selection.Find
-        .Text = "(番外*^13)"
-        .Replacement.Text = "^13^13\1"
-        .Forward = True
-        .Wrap = wdFindContinue
-        .Format = True
-        .MatchWildcards = True
-    End With
-    Selection.Find.Execute Replace:=wdReplaceAll
-            
-            
-    Selection.Find.ClearFormatting
-    Selection.Find.Replacement.ClearFormatting
-    With Selection.Find
-        .Text = "(后记*^13)"
-        .Replacement.Text = "^13^13\1"
-        .Forward = True
-        .Wrap = wdFindContinue
-        .Format = True
-        .MatchWildcards = True
-    End With
-    Selection.Find.Execute Replace:=wdReplaceAll
-    
-    
-    Selection.Find.ClearFormatting
-    Selection.Find.Replacement.ClearFormatting
-    With Selection.Find
-        .Text = "(作者的话*)^13"
-        .Replacement.Text = "^13^13\1"
-        .Forward = True
-        .Wrap = wdFindContinue
-        .Format = True
-        .MatchWildcards = True
-    End With
-    Selection.Find.Execute Replace:=wdReplaceAll
-    
-    
     
     '中文数字转标题
     '十以内中文数字
     Selection.Find.ClearFormatting
     Selection.Find.Replacement.ClearFormatting
     With Selection.Find
-        .Text = "^13([零,〇,一,二,三,四,五,六,七,八,九,十]*)^13"
+        .Text = "^13([零,〇,一,二,三,四,五,六,七,八,九,十])^13"
         .Replacement.Text = "^13^13第\1章^13^13^13"
         .Forward = True
         .Wrap = wdFindContinue
@@ -398,6 +283,128 @@ Dim filename As String
     Selection.Find.Execute Replace:=wdReplaceAll
     
     
+        
+    '统一插入空行
+    '在二级标题（第X章）前插入两个空行
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    With Selection.Find
+        .Text = "(第?[章,卷,部]*)"
+        .Replacement.Text = "^13^13\1^13^13"
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = True
+        .MatchWildcards = True
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+    
+    
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    With Selection.Find
+        .Text = "(第??[章,卷,部]*)"
+        .Replacement.Text = "^13^13\1^13^13"
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = True
+        .MatchWildcards = True
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+    
+    
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    With Selection.Find
+        .Text = "(第??[章,卷,部]*)"
+        .Replacement.Text = "^13^13\1^13^13"
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = True
+        .MatchWildcards = True
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+    
+    
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    With Selection.Find
+        .Text = "(第???章*)"
+        .Replacement.Text = "^13^13\1^13^13"
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = True
+        .MatchWildcards = True
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+    
+    
+    '汉字【第一千章】前，插入空行
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    With Selection.Find
+        .Text = "(第?????章*)"
+        .Replacement.Text = "^13^13\1^13^13"
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = True
+        .MatchWildcards = True
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+    
+    
+    '前言后记等插入空行
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    With Selection.Find
+        .Text = "(前言*^13)"
+        .Replacement.Text = "^13^13\1^13"
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = True
+        .MatchWildcards = True
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+            
+        
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    With Selection.Find
+        .Text = "(番外*^13)"
+        .Replacement.Text = "^13^13\1^13"
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = True
+        .MatchWildcards = True
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+            
+            
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    With Selection.Find
+        .Text = "(后记*^13)"
+        .Replacement.Text = "^13^13\1^13"
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = True
+        .MatchWildcards = True
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+    
+    
+    Selection.Find.ClearFormatting
+    Selection.Find.Replacement.ClearFormatting
+    With Selection.Find
+        .Text = "(作者的话*)^13"
+        .Replacement.Text = "^13^13\1"
+        .Forward = True
+        .Wrap = wdFindContinue
+        .Format = True
+        .MatchWildcards = True
+    End With
+    Selection.Find.Execute Replace:=wdReplaceAll
+    
+    
     
     '统一设置标题
     '设置一级标题：第X卷
@@ -405,7 +412,7 @@ Dim filename As String
     Selection.Find.Replacement.ClearFormatting
     Selection.Find.Replacement.Style = ActiveDocument.Styles("标题 1")
     With Selection.Find
-        .Text = "(第[0-9]@卷*)^13"
+        .Text = "(第?卷*)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -420,7 +427,7 @@ Dim filename As String
     Selection.Find.Replacement.ClearFormatting
     Selection.Find.Replacement.Style = ActiveDocument.Styles("标题 2")
     With Selection.Find
-        .Text = "(第[0-9]@章*)^13"
+        .Text = "(第?章*)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -450,7 +457,7 @@ Dim filename As String
     Selection.Find.Replacement.ClearFormatting
     Selection.Find.Replacement.Style = ActiveDocument.Styles("标题 2")
     With Selection.Find
-        .Text = "(第?[章,部]*)^13"
+        .Text = "(第?章*)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -464,7 +471,7 @@ Dim filename As String
     Selection.Find.Replacement.ClearFormatting
     Selection.Find.Replacement.Style = ActiveDocument.Styles("标题 2")
     With Selection.Find
-        .Text = "(第??[章,部]*)^13"
+        .Text = "(第??章*)^13"
         .Replacement.Text = "\1"
         .Forward = True
         .Wrap = wdFindContinue
@@ -588,12 +595,30 @@ Dim filename As String
     Selection.MoveDown Unit:=wdLine, Count:=1, Extend:=wdExtend
     Selection.Style = ActiveDocument.Styles("标题")
     
+        
+    '更新域
+    Selection.WholeStory
+    Selection.Fields.Update
     
-    '获取文件名，保存文件
+    
+    '获取文件名，保存DOCX
+    'ActiveDocument.Save
     filename = ActiveDocument.Paragraphs(1).Range.Text
     filename = Left(filename, Len(filename) - 1) & ".docx"
     ChangeFileOpenDirectory "D:\Users\Administrator\Desktop\"
     ActiveDocument.SaveAs2 filename:=filename
+    
+    
+    '获取文件名，保存TXT
+    'filename = ActiveDocument.Paragraphs(1).Range.Text
+    'filename = Left(filename, Len(filename) - 1) & ".txt"
+    'ChangeFileOpenDirectory "D:\Users\Administrator\Desktop\"
+    'ActiveDocument.SaveAs2 filename:=filename, FileFormat:=wdFormatText
+    
+    
+    '关闭文件
+    'ActiveDocument.Close 0
+    
     
     
 End Sub
