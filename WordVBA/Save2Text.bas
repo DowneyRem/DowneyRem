@@ -3,6 +3,11 @@ Dim file As String
 Dim filename As String
 
 
+    '更新域
+    Selection.WholeStory
+    Selection.Fields.Update
+    
+    
     '保存一次文件
     ActiveDocument.Save
     file = ActiveDocument.FullName
