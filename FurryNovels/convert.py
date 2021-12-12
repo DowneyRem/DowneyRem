@@ -45,6 +45,7 @@ def savetext(path, text):
             
 def copyfile(path1, path2):
     if os.path.exists(path1) and not os.path.exists(path2):
+        makedirs(path2)
         shutil.copyfile(path1, path2)
         
         
@@ -54,11 +55,12 @@ def opentext(path):
         with open(path,"r", encoding = "UTF8") as f:
             text = f.read()
     except UnicodeError:
-        with open(path,"r", encoding = "GBK") as f:
-            text = f.read()
-    except UnicodeError: #Big5 似乎有奇怪的bug，不过目前似乎遇不到
-        with open(path,"r", encoding = "BIG5") as f:
-            text = f.read()
+        try:
+            with open(path,"r", encoding = "GBK") as f:
+                text = f.read()
+        except UnicodeError: #Big5 似乎有奇怪的bug，不过目前似乎遇不到
+            with open(path,"r", encoding = "BIG5") as f:
+                text = f.read()
     finally:
         return text
         
@@ -71,15 +73,17 @@ def convert(list):
 
         name1 = cc1.convert(name)  #转简体
         name2 = cc2.convert(name)  #轉繁體
-        path11 = os.path.join(path1 + filepath, name1)  #简体文件目录
-        path22 = os.path.join(path2 + filepath, name2)  #繁體文件目錄
+        filepath1 = cc2.convert(filepath)  #转简体
+        filepath2 = cc2.convert(filepath)  #转繁体
+        path11 = os.path.join(path1 + filepath1, name1)  #简体文件目录
+        path22 = os.path.join(path2 + filepath2, name2)  #繁體文件目錄
         
         
         if os.path.exists(path11) and os.path.exists(path22): 
             i += 1
         else:
-            makedirs(path1 + filepath)
-            makedirs(path2 + filepath)
+            makedirs(path1 + filepath1)
+            makedirs(path2 + filepath2)
             text = opentext(readfile)
             
             
