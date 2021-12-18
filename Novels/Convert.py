@@ -92,34 +92,33 @@ def convert(list):
 
 
         text = ""
-        if os.path.exists(path2):
-            i += 1
-        elif ext == ".txt":
-            text = opentext(readfile)
-        elif ext == ".docx":
-            text = opendocx(readfile)
-            
-            
-        try:
-            text = cc2.convert(text)
-            savetext(path2, text)
-            print("【" + name + "】转换成功，当前进度："+ str(round(100*(i+1)/len(list),2))+"%")
-            
-        except:
-            print("【" + name + "】打开失败或文件有问题")
-    
+        if not os.path.exists(path2):
+            if ext == ".txt":
+                text = opentext(readfile)
+            elif ext == ".docx":
+                text = opendocx(readfile)
+                
+            try:
+                text = cc2.convert(text)
+                savetext(path2, text)
+                print("【" + name + "】转换成功，当前进度："+ str(round(100*(i+1)/len(list),2))+"%")
+                
+            except:
+                print("【" + name + "】打开失败或文件有问题")
+        
     
 def main():
     print("繁简转换开始：")
     print("下列文件已完成转换：")
     print("————————————————")
     
-    path3 = path.replace("\唐门小说", "\唐门小说\繁體版")
-    if os.path.exists(path3):
-        shutil.rmtree(path3)
-        print("旧版文件已经删除")
+    
+    # path3 = path.replace("\唐门小说", "\唐门小说\繁體版")
+    # if os.path.exists(path3):
+        # shutil.rmtree(path3)
+        # print("旧版文件已经删除")
         
-        
+
     findfile(path)
     if len(list) == 0:
         print("————————————————")
@@ -136,5 +135,4 @@ def main():
 if __name__ == "__main__":
     path = os.path.join(os.getcwd())
     path = path.replace("\工具", "")
-    
     list = []; main()
