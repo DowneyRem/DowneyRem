@@ -23,7 +23,7 @@ Dim filename As String
     '获取文件名，保存TXT/UTF8
     filename = ActiveDocument.Paragraphs(1).Range.Text
     filename = Left(filename, Len(filename) - 1) & ".txt"
-    ChangeFileOpenDirectory "D:\Users\Administrator\Desktop\"
+    ChangeFileOpenDirectory "C:\Users\Administrator\Desktop\"
     ActiveDocument.SaveAs2 filename:=filename, FileFormat:=wdFormatText, Encoding:=65001
     
     
