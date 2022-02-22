@@ -1,31 +1,33 @@
 Sub 小说排版()
 Dim filename As String
+Dim Para2 As String
+
 
 '
 ' 小说排版 宏
 '
-
-    '第一行后添加一个空行
-    'ActiveDocument.Paragraphs.Add _
-    'Range:=ActiveDocument.Paragraphs(2).Range
     
     
     '基本文本插入
-    '在第一行后插入下面的内容
-    Selection.HomeKey Unit:=wdStory
-    Selection.MoveDown Unit:=wdLine, Count:=1, Extend:=wdMove
-    Selection.TypeText Text:="作者："
-    Selection.TypeParagraph
-    Selection.TypeText Text:="网址："
-    Selection.TypeParagraph
-    Selection.TypeText Text:="标签："
-    Selection.TypeParagraph
-    'Selection.TypeText Text:="其他："
-    'Selection.TypeParagraph
-    Selection.TypeText Text:=""
-    Selection.TypeParagraph
-    Selection.TypeText Text:=""
-    Selection.TypeParagraph
+    '没有则在第一行后插入下面的内容
+    Para2 = ActiveDocument.Paragraphs(2).Range.Text
+    If InStr(1, Para2, "作者", vbTextCompare) = 0 Then
+    
+        Selection.HomeKey Unit:=wdStory
+        Selection.MoveDown Unit:=wdLine, Count:=1, Extend:=wdMove
+        Selection.TypeText Text:="作者："
+        Selection.TypeParagraph
+        Selection.TypeText Text:="网址："
+        Selection.TypeParagraph
+        Selection.TypeText Text:="标签："
+        Selection.TypeParagraph
+        Selection.TypeText Text:=""
+        Selection.TypeParagraph
+        Selection.TypeText Text:=""
+        Selection.TypeParagraph
+    
+    End If
+    
     
     
     '基本格式设置1
@@ -595,18 +597,27 @@ Dim filename As String
     Selection.MoveDown Unit:=wdLine, Count:=1, Extend:=wdExtend
     Selection.Style = ActiveDocument.Styles("标题")
     
-        
+    
+    '最后一行表格设置格式
+    Selection.EndKey Unit:=wdLine
+    Selection.EndKey Unit:=wdStory
+    Selection.Style = ActiveDocument.Styles("正文")
+    Selection.MoveUp Unit:=wdLine, Count:=1, Extend:=wdExtend
+    Selection.Style = ActiveDocument.Styles("正文")
+
+
     '更新域
     Selection.WholeStory
     Selection.Fields.Update
+    ActiveDocument.Save
     
     
-    '获取文件名，保存DOCX
+    '获取文件名，桌面保存DOCX
     'ActiveDocument.Save
-    filename = ActiveDocument.Paragraphs(1).Range.Text
-    filename = Left(filename, Len(filename) - 1) & ".docx"
-    ChangeFileOpenDirectory "D:\Users\Administrator\Desktop\"
-    ActiveDocument.SaveAs2 filename:=filename
+    'filename = ActiveDocument.Paragraphs(1).Range.Text
+    'filename = Left(filename, Len(filename) - 1) & ".docx"
+    'ChangeFileOpenDirectory "D:\Users\Administrator\Desktop\"
+    'ActiveDocument.SaveAs2 filename:=filename
     
     
     '获取文件名，保存TXT
@@ -622,3 +633,6 @@ Dim filename As String
     
     
 End Sub
+
+
+
