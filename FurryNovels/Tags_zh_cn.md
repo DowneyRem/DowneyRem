@@ -111,6 +111,7 @@
 ` #Vampire ` 吸血鬼  
 ` #SkinSuit ` 人皮服装  
 ` #Monser ` 怪物  
+` #DevilKing ` 魔王  
 
 #### 3. 特殊标签
 ` #Furry ` 兽人通用标签（用于未说明种族时）  
