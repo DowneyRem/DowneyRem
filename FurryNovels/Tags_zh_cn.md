@@ -143,6 +143,7 @@
 ` #Frottage ` 阴茎摩擦  
 ` #UrethraInsertion ` 尿道插入  
 ` #RapedWhileDying `奸杀
+` #tickling `搔痒，挠痒
 
 ####  性关系
 ` #Rape ` 强奸  
