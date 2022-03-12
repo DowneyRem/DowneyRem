@@ -61,23 +61,28 @@ def opendocx(path):
 def docx2txt(list):
 	for i in range(0, len(list)):
 		path = list[i]
-		textpath = path.replace("\写作", "\写作\兽人小说")
+		textpath = path.replace("\小说推荐", "\兽人小说\小说推荐\频道版")
 		textpath = textpath.replace(".docx", ".txt")
+		(filepath, name) = os.path.split(path)  # 分离文件名和目录名
+		name = name.replace(".docx", "")
 		
 		if os.path.exists(textpath):
 			i += 1
+			# print("【" + name + "】在程序运行前已转换")
 		else:
-			(filepath, name) = os.path.split(path) #分离文件名和目录名
-			name = name.replace(".docx", "")
-			
 			try:
 				text = opendocx(path)
 				savetext(textpath, text)
-				print("【" + name + "】转换成功，当前进度：" + str(round(100 * (i + 1) / len(list), 2)) + "%")
-			
+				print("【" + name + "】转换成功，当前进度：" + str(round(100 *(i+1)/len(list),2))+"%")
+	
 			except:
 				print("【" + name + "】打开失败或文件有问题")
-				
+
+def opennowdir(path):
+	path = path.replace("\小说推荐", "\兽人小说\小说推荐\频道版")
+	text = monthnow()
+	path = os.path.join(path,text)
+	os.system('start explorer '+ path)
 
 def main():
 	print("docx 转 txt ：")
@@ -87,15 +92,9 @@ def main():
 	path = path.replace("\工具","")
 	findfile(path)
 	docx2txt(list)
-	path = path.replace("\小说推荐", "\兽人小说\小说推荐")
-	text = monthnow()
-	path = os.path.join(path,text)
-	os.system('start explorer '+ path)
+	opennowdir(path)
 	
-	print("————————————————")
-	# print("所有文件均完成转换")
-	# os.system("pause")
-
 
 if __name__ == "__main__":
-	list = []; text = ""; main()
+	list = []; text = "";
+	main()
