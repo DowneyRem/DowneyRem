@@ -5,6 +5,8 @@ import time
 from docx.api import Document
 from opencc import OpenCC
 from functools import wraps
+from functools import wraps
+
 cc = OpenCC('s2twp')  # 簡轉繁
 
 dict = {"R-18":"R18", "R-18G":"R18G", "SFW":"SFW",
@@ -138,7 +140,7 @@ def monthnow():
 	month = str(time.localtime()[1])
 	if len(month) == 1:
 		month = "0" + month
-	string = os.path.join(year,month)
+	string = os.path.join(year, month)
 	return string
 
 
@@ -154,7 +156,7 @@ def findfile(path):
 	return pathlist
 
 
-def opendocx(path):
+def opendocx4(path):
 	docx = Document(path)
 	text = ""
 	j = 1
@@ -169,11 +171,11 @@ def opendocx(path):
 			break
 	
 	# 写入txt，以readlines的方式再次读取，获得段落对应的list
-	list = Text2List(text)
+	list = text2list(text)
 	return list
 
 
-def opentext(path):
+def opentext4(path):
 	try:
 		with open(path, "r", encoding="UTF8") as f:
 			list = f.readlines()[0:4]
@@ -184,7 +186,7 @@ def opentext(path):
 		return list
 
 
-def SettoText(set):
+def set2text(set):
 	text = str(set)
 	text = text.replace("{'", "")
 	text = text.replace("', '", " ")
@@ -192,7 +194,7 @@ def SettoText(set):
 	return text
 
 
-def translate(list): #获取英文标签
+def translate(list):  # 获取英文标签
 	tags2 = ""
 	s = set()
 	for i in range(0, len(list)):
@@ -201,16 +203,16 @@ def translate(list): #获取英文标签
 		tag = dict.get(tag)
 		
 		if tag != None:
-			s.add("#" + tag)  #利用set去重
+			s.add("#" + tag)  # 利用set去重
 		else:
 			tag = list[i].replace("\n", "")
 			tags2 += tag + " "
 	
-	tags1 = SettoText(s)
+	tags1 = set2text(s)
 	return tags1, tags2
 
 
-def Text2List(tags):  # 通过readlines，获得list对象
+def text2list(tags):  # 通过readlines，获得list对象
 	path = os.getcwd()
 	path = os.path.join(path, "tags.txt")
 	with open(path, "w", encoding="UTF8") as f:
@@ -224,14 +226,14 @@ def Text2List(tags):  # 通过readlines，获得list对象
 	return list
 
 
-def TextConvert(list):
+def textconvert(list):
 	name = cc.convert(list[0])
 	authro = "by #" + list[1].replace("作者：", "")
 	url = list[2].replace("网址：", "")
 	tags = list[3].replace("标签：", "")
 	tags = tags.replace(" ", "\n")
 	
-	list = Text2List(tags)
+	list = text2list(tags)
 	(tags1, tags2) = translate(list)
 	text = name + authro + tags1 + "\n特殊：" + tags2 + "\n" + url
 	print(text)
@@ -240,21 +242,22 @@ def TextConvert(list):
 
 def main():
 	path = os.getcwd()
-	findfile(path)
+	path = path.replace("\工具", "")
+	pathlist = findfile(path)
+	dirstr = monthnow()  # 只处理本月的文件
 	j = 0
 	
 	for i in range(0, len(pathlist)):
 		path = pathlist[i]
 		(dir, name) = os.path.split(path)
-		dirstr = monthnow()  #只处理本月的文件
-		
+
 		if dirstr in dir:
 			j += 1
-			list1 = opendocx(path)
-			TextConvert(list1)
+			list1 = opendocx4(path)
+			textconvert(list1)
 	if j == 0:
 		print("本月 " + dirstr + " 无新文档")
-		
+
 
 if __name__ == "__main__":
 	pathlist = []
