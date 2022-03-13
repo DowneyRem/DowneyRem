@@ -2,7 +2,6 @@
 # -*- coding: UTF-8 -*-
 import os
 import time
-import shutil
 from opencc import OpenCC
 from functools import wraps
 cc1 = OpenCC('tw2sp')  #繁转简
