@@ -529,7 +529,7 @@ def textconvert(list):
 
 def main():
 	path = os.getcwd()
-	dict2md(os.path.join(path,"tags.md"))
+	dict2md(os.path.join(path,"Tags.md"))
 	path = path.replace("\工具", "")
 	pathlist = findfile(path)
 	dirstr = monthnow()  # 只处理本月的文件
