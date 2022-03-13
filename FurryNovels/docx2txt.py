@@ -26,6 +26,12 @@ def monthnow():
 	string = os.path.join(year, month)
 	return string
 
+def opennowdir(path):
+	path = path.replace("\小说推荐", "\兽人小说\小说推荐\频道版")
+	text = monthnow()
+	path = os.path.join(path,text)
+	os.system('start explorer '+ path)
+
 
 def findfile(path):
 	for dir in os.listdir(path):
@@ -39,14 +45,6 @@ def findfile(path):
 	return list
 
 
-def savetext(path, text):
-	(dir, name) = os.path.split(path) #分离文件名和目录名
-	if not os.path.exists(dir):
-		os.makedirs(dir)
-	with open(path, "w", encoding = "UTF8") as f:
-		f.write(text)
-
-
 def opendocx(path):
 	docx = Document(path)
 	text = ""
@@ -56,6 +54,14 @@ def opendocx(path):
 		else:
 			text += para.text + "\n"  # 除正文缩进外的其他所有
 	return text
+
+
+def savetext(path, text):
+	(dir, name) = os.path.split(path) #分离文件名和目录名
+	if not os.path.exists(dir):
+		os.makedirs(dir)
+	with open(path, "w", encoding = "UTF8") as f:
+		f.write(text)
 
 
 def docx2txt(list):
@@ -78,11 +84,7 @@ def docx2txt(list):
 			except:
 				print("【" + name + "】打开失败或文件有问题")
 
-def opennowdir(path):
-	path = path.replace("\小说推荐", "\兽人小说\小说推荐\频道版")
-	text = monthnow()
-	path = os.path.join(path,text)
-	os.system('start explorer '+ path)
+
 
 def main():
 	print("docx 转 txt ：")
@@ -96,5 +98,5 @@ def main():
 	
 
 if __name__ == "__main__":
-	list = []; text = "";
+	list = []
 	main()
