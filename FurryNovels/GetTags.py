@@ -5,12 +5,14 @@ import time
 from docx.api import Document
 from opencc import OpenCC
 from functools import wraps
+from functools import cmp_to_key
 cc1 = OpenCC('tw2sp')  #繁转简
 cc2 = OpenCC('s2twp')  #簡轉繁
 
 
-DICT = dict = {"txt":"txt",
-        "docx":"docx",
+dict = {
+		"txt":"txt",
+		"docx":"docx",
 		"完结":"Finished",
 		"完稿":"Finished",
 		"finished":"Finished",
@@ -390,7 +392,18 @@ DICT = dict = {"txt":"txt",
 		"analbirth":"AnalBirth",
   
 		"小说":"",
-        }
+		}
+
+
+def timethis(func):
+	@wraps(func)
+	def wrapper(*args, **kwargs):
+		start = time.perf_counter()
+		r = func(*args, **kwargs)
+		end = time.perf_counter()
+		print('{}.{} : {}'.format(func.__module__, func.__name__, end - start))
+		return r
+	return wrapper
 
 
 def monthnow():
@@ -402,17 +415,38 @@ def monthnow():
 	return string
 
 
-def dict2md(path):
-	text = "### 关键词标签表"
-	text = text + "\n| 标签 | 关键词 | "
-	text = text + "\n| -- | -- | "
-	list1 = list(dict.items())
-	for i in range(0, len(list1)):
-		(key, value) = list1[i]
-		if value != "":
-			value = "#" + value
-			text += "\n| " + value + " | " + key + " |"
-	savetext(path, text)
+def opennowdir():
+	path = os.getcwd()
+	path = path.replace("\小说推荐\工具", "\兽人小说\小说推荐\频道版")
+	text = monthnow()
+	path = os.path.join(path,text)
+	os.system('start explorer '+ path)
+
+
+def cmp(a, b):
+	def getindex(a):
+		li = list(dict.values())
+		index = li.index(a)
+		return index
+	
+	a = getindex(a)
+	b = getindex(b)
+	if a > b:
+		return 1
+	elif a < b:
+		return -1
+	else:
+		return 0
+
+
+def sorttags(set):  # 按dict内顺序对转换后的标签排序
+	text = ""
+	li = list(set)
+	li.sort(key=cmp_to_key(cmp))
+	for i in range(len(li)):
+		tag = li[i]
+		text += "#" + tag + " "
+	return text
 
 
 def savetext(path, text):
@@ -427,6 +461,31 @@ def savetext(path, text):
 		print("【" + name + "】保存失败")
 
 
+def savedict2md():
+	text = "### 关键词标签表\n"
+	text = text + "\n| 标签 | 关键词 | "
+	text = text + "\n| -- | -- | "
+	list1 = list(dict.items())
+	for i in range(0, len(list1)):
+		(key, value) = list1[i]
+		if value != "":
+			value = "#" + value
+			text += "\n| " + value + " | " + key + " |"
+	
+	path = os.path.join(os.getcwd(), "Tags.md")
+	savetext(path, text)
+	
+	
+def savetags2text(set):
+	text = str(set)
+	text = text.replace("{'", "")
+	text = text.replace("'}", "")
+	text = text.replace("', '", " ")
+	text = text.replace(" ", "\n")
+	path = "D:\\Users\\Administrator\\Desktop\\tag.txt"
+	savetext(path, text)
+
+	
 def findfile(path):
 	for dir in os.listdir(path):
 		dir = os.path.join(path, dir)
@@ -434,17 +493,32 @@ def findfile(path):
 			findfile(dir)
 		if os.path.isfile(dir):
 			(name, ext) = os.path.splitext(dir)
-			if ext == ".docx":
+			if ext == ".docx" or ext == ".txt":
 				pathlist.append(dir)
 	return pathlist
 
 
+def opentext4(path):
+	textlist =[]
+	try:
+		with open(path, "r", encoding="UTF8") as f:
+			textlist = f.readlines()[0:4]
+	except UnicodeError:
+		try:
+			with open(path, "r", encoding="GBK") as f:
+				textlist = f.readlines()[0:4]
+		except UnicodeError:
+			with open(path, "r", encoding = "BIG5") as f:
+				textlist = f.readlines()[0:4]
+	finally:
+		return textlist
+	
+	
 def opendocx4(path):
 	docx = Document(path)
-	text = ""
-	j = 1
+	text = "";  j = 1
 	for para in docx.paragraphs:
-		if j < 5:  # 读取前4行内容
+		if j < 5:  # 只读取前4行内容
 			j += 1
 			if para.style.name == "Normal Indent":  # 正文缩进
 				text += "　　" + para.text + "\n"
@@ -452,50 +526,8 @@ def opendocx4(path):
 				text += para.text + "\n"  # 除正文缩进外的其他所有
 		else:
 			break
-	text = cc1.convert(text)  #转简体，只处理简体标签
-	# 写入txt，以readlines的方式再次读取，获得段落对应的list
-	list = text2list(text)
-	return list
-
-
-def opentext4(path):
-	try:
-		with open(path, "r", encoding="UTF8") as f:
-			list = f.readlines()[0:4]
-	except UnicodeError:
-		with open(path, "r", encoding="GBK") as f:
-			list = f.readlines()[0:4]
-	finally:
-		return list
-
-
-def set2text(set):
-	text = str(set)
-	text = text.replace("{'", "")
-	text = text.replace("', '", " ")
-	text = text.replace("'}", "")
-	return text
-
-
-def translate(list):  # 获取英文标签
-	tags2 = ""
-	s = set()
-	for i in range(0, len(list)):
-		tag = list[i].replace("\n", "")
-		tag = tag.replace("#", "")
-		tag = tag.replace(" ", "")
-		tag = tag.replace("　", "")
-		tag = dict.get(tag)
-		
-		if tag != None:
-			s.add("#" + tag)  # 利用set去重
-		else:
-			tag = list[i].replace("\n", "")
-			tag = tag.replace(" ", "")
-			tag = tag.replace("　", "")
-			tags2 += tag + " "
-	tags1 = set2text(s)
-	return tags1, tags2
+	textlist = text2list(text) 	# 写入txt，以readlines的方式再次读取，获得段落对应的list
+	return textlist
 
 
 def text2list(tags):  # 通过readlines，获得list对象
@@ -504,55 +536,82 @@ def text2list(tags):  # 通过readlines，获得list对象
 	with open(path, "w", encoding="UTF8") as f:
 		f.write(tags)
 	with open(path, "r", encoding="UTF8") as f:
-		list = f.readlines()
+		taglist = f.readlines()
 	try:
 		os.remove(path)
 	except IOError:
 		print("tags.txt 删除失败")
-	return list
+	return taglist
 
 
-def textconvert(list):
-	name = cc2.convert(list[0])
-	authro = "by #" + list[1].replace("作者：", "")
-	url = list[2].replace("网址：", "")
-	tags = list[3].replace("标签：", "")
-	tags = tags.replace(" ", "\n")
+def translate(taglist):  # 获取英文标签
+	tags2 = "" ; s = set()
+	for i in range(0, len(taglist)):
+		tag = taglist[i].replace("\n", "")
+		tag = tag.replace("#", "")
+		tag = tag.replace(" ", "")
+		tag = tag.replace("　", "")
+		tag = dict.get(tag)  #获取英文标签
+		
+		if tag != None:
+			s.add(tag)  # 获取到的标签利用set去重
+		else:
+			tag = taglist[i].replace("\n", "")
+			tag = tag.replace(" ", "")
+			tag = tag.replace("　", "")
+			tags2 += tag + " "
+			
+	tags1 = sorttags(s)  #对转换后的标签排序
+	return tags1, tags2
 	
-	list = text2list(tags)   #通过保存txt将tag写入list
-	(tags1, tags2) = translate(list)  #已翻译，未翻译的标签
-	text = name + authro + tags1 + "\n特殊：" + tags2 + "\n" + url
-	# print(tags2)
-	print(text)
-	return text,tags2
+
+def textformat(textlist):
+	name = cc2.convert(textlist[0])
+	authro = "by #" + textlist[1].replace("作者：", "")
+	url = textlist[2].replace("网址：", "")
+	tags = textlist[3].replace("标签：", "")
+	tags = tags.replace(" ", "\n")
+	tags = cc1.convert(tags)  #转简体，只处理简体标签
+	list = text2list(tags)   #通过保存txt，将tag写入list
+	(tags1, tags2) = translate(list)  #获取已翻译/未翻译的标签
+	text = name + authro + tags1 + "\n特殊：" + tags2 + "\n" + url + "\n"
+	print(text)  #格式化输出
+	return tags2 #输出不支持的标签
 
 
-def main():
-	path = os.getcwd()
-	dict2md(os.path.join(path,"Tags.md"))
-	path = path.replace("\工具", "")
+def printtags(path):
 	pathlist = findfile(path)
 	dirstr = monthnow()  # 只处理本月的文件
-	j = 0
-	s=set()
-	
+	s = set() ; j = 0
 	for i in range(0, len(pathlist)):
 		path = pathlist[i]
 		(dir, name) = os.path.split(path)
-		if dirstr in dir:
+		if dirstr in dir:  # 只处理本月的文件
 			j += 1
-			list1 = opendocx4(path)
-			s.add(textconvert(list1)[1])
-		
-	text = set2text(s)
-	path = "D:\\Users\\Administrator\\Desktop\\tag.txt"
-	savetext(path, text)
+			(name, ext) = os.path.splitext(name)
+			if ext == ".docx":
+				textlist = opendocx4(path)
+			elif ext == ".text":
+				textlist = opentext4(path)
+			s.add(textformat(textlist))
 	
-	if j == 0:
+	if j != 0:
+		opennowdir()
+	else:
 		print("本月 " + dirstr + " 无新文档")
+	return s
+	
+
+def main():
+	print("本月文档如下：")
+	print("\n"*2)
+	s = printtags(path)
+	savetags2text(s)
+	savedict2md()
 
 
 if __name__ == "__main__":
+	path = os.path.join(os.getcwd())
+	path = path.replace("\工具", "")
 	pathlist = []
-	print("")
 	main()

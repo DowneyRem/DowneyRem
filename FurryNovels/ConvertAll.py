@@ -20,22 +20,6 @@ def timethis(func):
 		return r
 	return wrapper
 
-def monthnow():
-	year = str(time.localtime()[0])
-	month = str(time.localtime()[1])
-	if len(month) == 1:
-		month = "0" + month
-	string = os.path.join(year, month)
-	return string
-
-def opennowdir():
-	path = os.getcwd()
-	path = path.replace("\小说推荐\工具", "\兽人小说\小说推荐\频道版")
-	text = monthnow()
-	path = os.path.join(path,text)
-	print("已打开：" + path)
-	os.system('start explorer '+ path)
-
 
 def finddocx(path):
 	for dir in os.listdir(path):
@@ -153,9 +137,6 @@ def main():
 	convert(list)
 	print("-" * 40)
 	print("文档转换已完成")
-	opennowdir()
-	print("本月文档标签如下：")
-	print("")
 	os.system("python ./GetTags.py")
 	os.system("pause")
 	
