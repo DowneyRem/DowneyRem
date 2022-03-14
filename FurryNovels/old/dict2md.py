@@ -2,7 +2,8 @@
 # -*- coding: UTF-8 -*-
 import os
 
-dict = {"txt":"txt",
+dict = {
+        "txt":"txt",
         "docx":"docx",
         "完结":"Finished",
         "完稿":"Finished",
@@ -418,4 +419,6 @@ def savemd(path, text):
 
 
 if __name__ == '__main__':
-	dict2md()
+	path = os.getcwd()
+    text = dict2md()
+    savemd(path, text)
