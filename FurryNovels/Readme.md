@@ -22,7 +22,7 @@
 
 ### 标签系统
 [简体](https://github.com/DowneyRem/DowneyRem/blob/main/FurryNovels/Tags_zh_cn.md) & 
-[繁體](https://github.com/DowneyRem/DowneyRem/blob/main/FurryNovels/Tags_zh_tw.md) & 
-[谷歌表格旧版](https://docs.google.com/spreadsheets/d/1Dtm1pCWmTO_KmJExdXoedxYVoxbnoHtEAnxSykGlVPo)  
+[繁體](https://github.com/DowneyRem/DowneyRem/blob/main/FurryNovels/Tags_zh_tw.md) 
+
 
 ### 投稿bot：待定
