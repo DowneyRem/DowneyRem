@@ -26,7 +26,7 @@
 ### 标签系统
 顺序以此为标准
 [简体](https://github.com/DowneyRem/DowneyRem/blob/main/FurryNovels/Tags_zh_cn.md) & 
-[繁體](https://github.com/DowneyRem/DowneyRem/blob/main/FurryNovels/Tags_zh_tw.md) &  
+[繁體](https://github.com/DowneyRem/DowneyRem/blob/main/FurryNovels/Tags_zh_tw.md) & 
 [标签对应关系](https://github.com/DowneyRem/DowneyRem/blob/main/FurryNovels/Tags.md) 
 
 ### 投稿bot：待定
