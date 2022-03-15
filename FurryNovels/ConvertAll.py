@@ -137,7 +137,7 @@ def main():
 	convert(list)
 	print("-" * 40)
 	print("文档转换已完成")
-	os.system("python ./GetTags.py")
+	os.system("python ./PrintTags.py")
 	os.system("pause")
 	
 	

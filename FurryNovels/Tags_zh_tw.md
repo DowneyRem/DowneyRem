@@ -1,6 +1,9 @@
 ## [獸人小說頻道](https://t.me/FurryNovels)標籤  
-  
-### 使用方式  
+
+由 [简体版](https://github.com/DowneyRem/DowneyRem/blob/main/FurryNovels/Tags_zh_cn.md) 经由OpenCC转换而成，不经常更新/添加标签
+
+### 使用方式
+
 受 Telegram 限制，標籤的功能為標記  
 **出現標籤相關內容，即可使用該標籤進行描述**  
 標籤過多時，可選取主要標籤  
@@ -21,7 +24,7 @@
 
 ### 第一行：雜類  
 ` #TXT #finished #zh_cn`  
-  
+
 #### 1. 文件格式  
 - ` #TXT ` TXT 格式，通常採用 UTF-8 編碼  
 - ` #epub ` epub 格式  
@@ -82,7 +85,7 @@
 ` #Tiger ` 老虎  
 ` #Turtle ` 龜  
 ` #Wolf ` 狼  
-  
+
 #### 2. 特殊種族  
 ` #Human ` 人類  
 ` #Harpy ` 鳥人  
@@ -92,17 +95,17 @@
 ` #Vampire ` 吸血鬼  
 ` #SkinSuit ` 人皮服裝  
 ` #Monser ` 怪物  
-  
+
 #### 3. 特殊標籤  
 ` #Furry ` 獸人通用標籤（用於未說明種族時）  
 ` #non-anthro ` 純獸形態（通常具有高級智慧）  
 ` #non-anthro #dragon ` 只有四足巨龍  
 ` #anthro #dragon ` 只有龍獸人（通常可省略`#anthro`或以`#Furry`代替）  
 ` #dragon ` 有巨龍與龍獸人，或可以切換身體  
-  
+
 ### 第四行：玩法等  
 統一小類標籤過多可以換行，分隔不同類別標籤（通常沒必要）  
-  
+
 #### 性交方式  
 ` #VaginalSex ` 陰道交  
 ` #Anal ` 肛交  
@@ -121,7 +124,7 @@
 ` #CockSlapping ` 陰莖打臉  
 ` #Frottage ` 陰莖摩擦  
 ` #UrethraInsertion ` 尿道插入  
-  
+
 #### 性關係  
 ` #Rape ` 強姦  
 ` #Uncest ` 亂倫  
@@ -131,7 +134,7 @@
 ` #Netorare ` 綠帽  
 ` #Oyakodon ` 父子丼  
 ` #Shimaidon ` 兄弟丼  
-  
+
 #### 調教  
 ` #Bdsm ` 調教  
 ` #Bondage ` 束縛  
@@ -152,7 +155,7 @@
 ` #Forniphilia ` 人體家具  
 ` #FoodOnBody ` 人體餐盒  
 ` #CumDring ` 食精  
-  
+
 #### 劇情因素  
 ` #Possession ` 附身  
 ` #Parasite ` 寄生  
@@ -169,7 +172,7 @@
 ` #GenderBender ` 性轉  
 ` #BodySwap ` 靈魂交換  
 ` #machine ` 機械姦  
-  
+
 #### 衣著  
 ` #Diaper ` 尿布  
 ` #Latex ` 乳膠衣  
@@ -183,12 +186,12 @@
 ` #SwimSuit ` 泳裝  
 ` #Fundoshi ` 六尺褌  
 ` #socks ` 襪子  
-  
+
 #### 身體描述  
 ` #Muscles ` 肌肉豐滿  
 ` #BigPenis ` 大根  
 ` #Phimosis ` 包莖  
-  
+
 #### 吞食  
 ` #Vore ` 吞食  
 ` #CockPhagia ` 陰莖吞噬  
@@ -199,8 +202,8 @@
 ` #Eggs ` 產卵  
 ` #PenisBirth ` 陰莖出產  
 ` #AnalBirth ` 肛門出產  
-  
+
 ### 第五行：網址  
 可以閱讀該小說網址  
 https://www.pixiv.net/novel/show.php?id=12172396  
-  
+

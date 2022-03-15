@@ -36,3 +36,30 @@
 │    └──📂 小说推荐 
 └── 📜 其他文件
 ```
+
+## 使用说明
+装好第三方库，并在对应目录放置好文件后，或者你修改好对应目录后，就应该可以用了
+```python
+pip install python-docx
+pip install opencc-python-reimplemented
+或使用官方的OpenCC
+pip install opencc
+```
+
+### ConvertAll.py
+需要开启 **正文缩进 / Normal Indent** 样式  
+可以使用 **小说.dotx** 或 **小说.dotm**作为模板  
+后者有**宏代码**，可以自行排版，但需要开启**开发工具**选项卡，并在**宏安全性**中启用宏  
+
+如果你安装了` python-docx `模块也可以这样（见 Normal_Indent.py）开启正文缩进  
+就算你启用了正文缩进，也无法在python docx 里直接使用此样式  
+不如直接用设定好样式的模板来跑
+
+### PrintTags
+
+```
+pip install python-docx
+pip install opencc-python-reimplemented
+或使用官方的OpenCC
+pip install opencc
+```
