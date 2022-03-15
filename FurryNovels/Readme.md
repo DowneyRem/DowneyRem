@@ -13,16 +13,20 @@
 1. 投稿方式：前期手动筛选，后期自助投稿  
 1. 标签系统：主要采用 Ehentai 标签，详见下方  
 1. 小说来源：pixiv 为主；微博、贴吧、Q群等为辅  
-1. 文件格式：有章节优化的TXT（UTF8编码）  
+1. 文件格式：有章节优化的TXT（UTF8编码，无bom）  
 1. 版权风险：不想被刊载，可以再收到通知后下架  
-1. 简繁问题：决定于作者提供的版本；文件名-繁/简  
+1. 简繁问题：决定于作者提供的版本  
 1. 订阅来源：各活跃TG兽人群组  
 1. 更新频率：待定（每周1次起步）  
 1. 后期运营：找到接盘侠后在考虑
 
-### 标签系统
-[简体](https://github.com/DowneyRem/DowneyRem/blob/main/FurryNovels/Tags_zh_cn.md) & 
-[繁體](https://github.com/DowneyRem/DowneyRem/blob/main/FurryNovels/Tags_zh_tw.md) 
+### [项目目录](https://github.com/DowneyRem/DowneyRem/blob/main/FurryNovels/ProjectDirectory.md)
 
+
+### 标签系统
+顺序以此为标准
+[简体](https://github.com/DowneyRem/DowneyRem/blob/main/FurryNovels/Tags_zh_cn.md) & 
+[繁體](https://github.com/DowneyRem/DowneyRem/blob/main/FurryNovels/Tags_zh_tw.md) &  
+[标签对应关系](https://github.com/DowneyRem/DowneyRem/blob/main/FurryNovels/Tags.md) 
 
 ### 投稿bot：待定
