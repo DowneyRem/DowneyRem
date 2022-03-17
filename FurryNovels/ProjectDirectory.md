@@ -10,7 +10,7 @@
 ├── 📂 工具
 │    ├── 📜 ConvertAll.py   #docx转txt，并进行繁简转换
 │    ├── 📜 GetTags.py      #根据文件内的标签转换标签
-│    └── 📜 Tags.md         #由 GetTags.py 生成
+│    └── 📜 Tags.md         #由 PrintTags.py 生成
 └── 📜 繁简转换说明.docx
 ```
 ### 兽人小说
