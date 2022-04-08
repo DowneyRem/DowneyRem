@@ -13,11 +13,16 @@
 [Telegram](https://t.me/TNT_wwxs) |
 [Twitter](https://twitter.com/TNTwwxs) |
 Tencent QQ  
-付费支持：
+投喂打赏：
 [小说列表](https://kdocs.cn/l/slkWbodUc) |
 [面包多](https://dun.mianbaoduo.com/@TNTwwxs) |
 [爱发电](https://afdian.net/@TNTwwxs) |
-[Patreon](https://www.patreon.com/join/TNTwwxs)
+[Patreon](https://www.patreon.com/join/TNTwwxs)  
+个龙主页：
+[WoLai页面](https://www.wolai.com/aX5dqDoEbhBMZxb9WDUTfw) |
+[Carrd页面](https://DowneyRem.carrd.co)   
+设定相关：[龙设思考方向](https://github.com/DowneyRem/DowneyRem/blob/main/CreateADragon.md)
+
 
 ### Telegram相关：
 [电报指南](https://telegra.ph/TNTwwxs-01-08-06)： 
@@ -27,9 +32,6 @@ Tencent QQ
 电报频道：
 [兽人小说频道](https://t.me/FurryNovels) | 
 [Pixiv的阅读书源](https://github.com/DowneyRem/PixivSource) | 
-
-
-设定相关：[龙设思考方向](https://github.com/DowneyRem/DowneyRem/blob/main/CreateADragon.md)
 
 
 ### 感谢与其他：
