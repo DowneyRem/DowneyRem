@@ -1,4 +1,4 @@
-# 重新启用休眠并休眠
+﻿# 重新启用休眠并休眠
 
 # 获取管理员权限执行
 if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) { Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs; exit }
