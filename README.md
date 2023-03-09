@@ -15,31 +15,25 @@
 Tencent QQ  
 投喂打赏：
 [小说列表](https://kdocs.cn/l/slkWbodUc) |
-[面包多](https://dun.mianbaoduo.com/@TNTwwxs) |
 [爱发电](https://afdian.net/@TNTwwxs) |
 [Patreon](https://www.patreon.com/join/TNTwwxs)  
 个龙主页：
 [WoLai页面](https://www.wolai.com/aX5dqDoEbhBMZxb9WDUTfw) |
 [Carrd页面](https://DowneyRem.carrd.co)   
-设定相关：[龙设思考方向](https://github.com/DowneyRem/DowneyRem/blob/main/CreateADragon.md)
 
 
 ### Telegram相关：
 [电报指南](https://telegra.ph/TNTwwxs-01-08-06)： 
 [小动物特供版](https://telegra.ph/TNTwwxs-09-08-06) | 
-[Furry频道推荐](https://telegra.ph/TNTwwxs-02-08-06) | 
-[中文Furry群组](https://telegra.ph/TNTwwxs-08-08-06)   
+[Furry频道推荐](https://telegra.ph/TNTwwxs-02-08-06)  
 电报频道：
 [兽人小说频道](https://t.me/FurryNovels) | 
-[Pixiv的阅读书源](https://github.com/DowneyRem/PixivSource) | 
+[本龙小说频道](https://t.me/s/TNTwwxs) 
 
 
-### 感谢与其他：
-衷心感谢：
-[JadyXuan](https://github.com/JadyXuan) & 
-[UtopicPanther](https://github.com/UtopicPanther) 
-提供的技术支持  
-其他内容：
-[MarkDown](https://github.com/DowneyRem/DowneyRem/blob/main/MarkDown.md) | 
-[Github相关](https://github.com/DowneyRem/DowneyRem/blob/main/GitHub.md) | 
-[FGI贡献](https://github.com/DowneyRem/DowneyRem/blob/main/FGI.md) | 
+### 其他内容：
+[MarkDown](MarkDown.md) | 
+[Github相关](GitHub.md) | 
+[FGI贡献](FGI.md) | 
+[龙设思考方向](CreateADragon.md) 
+
