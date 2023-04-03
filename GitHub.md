@@ -21,5 +21,5 @@ https://liyucang-git.github.io/2019/11/15/git%E6%96%87%E4%BB%B6%E5%A4%B9%E6%8E%A
 </a>
 
 
-<a href="<a href="legado://import/bookSource?src={https://gj.legado.cc/legado/?url=https://miaogongzi.lanzout.com/ive4Q0rs78xe&type=down}"> 测试链接 
+<a href="legado://import/bookSource?src=https://gj.legado.cc/legado/?url=https://miaogongzi.lanzout.com/ive4Q0rs78xe&type=down">测试链接 
 </a>
