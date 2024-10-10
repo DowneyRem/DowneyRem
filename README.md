@@ -15,11 +15,8 @@
 Tencent QQ  
 投喂打赏：
 [小说列表](https://kdocs.cn/l/slkWbodUc) |
-[爱发电](https://afdian.net/@TNTwwxs) |
+[爱发电](https://afdian.com/@TNTwwxs) |
 [Patreon](https://www.patreon.com/join/TNTwwxs)  
-个龙主页：
-[WoLai页面](https://www.wolai.com/aX5dqDoEbhBMZxb9WDUTfw) |
-[Carrd页面](https://DowneyRem.carrd.co)   
 
 
 ### Telegram相关：
