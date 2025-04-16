@@ -1,4 +1,4 @@
-## [你好，我是唐尼瑞姆/唐门](https://www.pixiv.net/novel/show.php?id=11775832)  
+## 唐尼瑞姆/唐门
 
 ### 本龙的兽人/兽化小说：
 [Pixiv 主页](https://www.pixiv.net/member.php?id=16721009) | 
@@ -21,7 +21,6 @@
 [开源阅读 整合教程](https://github.com/DowneyRem/FurryNovels/blob/main/doc/UseLagado.md)
 
 ### 投喂打赏：
-
 [爱发电](https://afdian.com/@TNTwwxs) |
 [Patreon](https://www.patreon.com/join/TNTwwxs)  
 
