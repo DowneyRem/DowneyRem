@@ -20,11 +20,11 @@
 [Pixiv 书源 使用教程](https://github.com/windyhusky/PixivSource/blob/main/doc/Pixiv.md) | 
 [开源阅读 整合教程](https://github.com/DowneyRem/FurryNovels/blob/main/doc/UseLagado.md)
 
-### 投喂打赏：
+### 投喂打赏 & 联系本龙：
+打赏赞助：
 [爱发电](https://afdian.com/@TNTwwxs) |
 [Patreon](https://www.patreon.com/join/TNTwwxs)  
 
-### 联系本龙：
+联系本龙：
 [Telegram](https://t.me/TNT_wwxs) |
-[Twitter](https://twitter.com/TNTwwxs) |
-Tencent QQ
+[Twitter](https://twitter.com/TNTwwxs)
