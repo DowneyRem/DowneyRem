@@ -1,7 +1,7 @@
 ## 唐尼瑞姆/唐门
 
 ### 本龙的兽人/兽化小说：
-[Pixiv 主页](https://www.pixiv.net/member.php?id=16721009) | 
+[Pixiv 主页](https://www.pixiv.net/users/119009262) | 
 [Telegram 小说频道](https://t.me/s/TNTwwxs) | 
 [小说列表](https://kdocs.cn/l/slkWbodUc)
 
